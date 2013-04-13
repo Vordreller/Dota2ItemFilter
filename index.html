@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOTA2 Items by type</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Language" content="en-US" />
+        <link rel="stylesheet" href="css/normalize-2.1.1.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div id="left">
+                    <form>
+                        <fieldset>
+                            <legend>Select your choices:</legend>
+                            <label for="consumables">Consumables</label><input id="consumables" type="checkbox" name="consumables" value="consumables" /><br />
+                            <label for="teleport">Teleport</label><input id="teleport" type="checkbox" name="teleport" value="teleport" /><br />
+                            <label for="invisibility">Invisibility</label><input id="invisibility" type="checkbox" name="invisibility" value="invisibility" /><br />
+                            <label for="true_sight">True Sight</label><input id="true_sight" type="checkbox" name="true_sight" value="true_sight" /><br />
+                            <label for="move_speed">Movement Speed</label><input id="move_speed" type="checkbox" name="move_speed" value="move_speed" /><br />
+                            <label for="enemy_move_speed_reduction">Enemy Movement Speed Reduction</label><input id="enemy_move_speed_reduction" type="checkbox" name="enemy_move_speed_reduction" value="enemy_move_speed_reduction" /><br />
+                            <label for="strength">Strength</label><input id="strength" type="checkbox" name="strength" value="strength" /><br />
+                            <label for="agility">Agility</label><input id="agility" type="checkbox" name="agility" value="agility" /><br />
+                            <label for="intelligence">Intelligence</label><input id="intelligence" type="checkbox" name="intelligence" value="intelligence" /><br />
+                            <label for="damage">Damage</label><input id="damage" type="checkbox" name="damage" value="damage" /><br />
+                            <label for="pure_damage">Pure Damage</label><input id="pure_damage" type="checkbox" name="pure_damage" value="pure_damage" /><br />
+                            <label for="critical_damage">Critical Damage</label><input id="critical_damage" type="checkbox" name="critical_damage" value="critical_damage" /><br />
+                            <label for="damage_amplification">Damage Amplification</label><input id="damage_amplification" type="checkbox" name="damage_amplification" value="damage_amplification" /><br />
+                            <label for="magic_damage_amplification">Magic Damage Amplification</label><input id="magic_damage_amplification" type="checkbox" name="magic_damage_amplification" value="magic_damage_amplification" /><br />
+                            <label for="damage_block">Damage Block</label><input id="damage_block" type="checkbox" name="damage_block" value="damage_block" /><br />
+                            <label for="magic_damage_block">Magic Damage Block</label><input id="magic_damage_block" type="checkbox" name="magic_damage_block" value="magic_damage_block" /><br />
+                            <label for="attack_speed">Attack Speed</label><input id="attack_speed" type="checkbox" name="attack_speed" value="attack_speed" /><br />
+                            <label for="enemy_attack_speed_reduction">Enemy Attack Speed Reduction</label><input id="enemy_attack_speed_reduction" type="checkbox" name="enemy_attack_speed_reduction" value="enemy_attack_speed_reduction" /><br />
+                            <label for="lifesteal">Lifesteal</label><input id="lifesteal" type="checkbox" name="lifesteal" value="lifesteal" /><br />
+                            <label for="health">Health</label><input id="health" type="checkbox" name="health" value="health" /><br />
+                            <label for="health_regen">Health Regen</label><input id="health_regen" type="checkbox" name="health_regen" value="health_regen" /><br />
+                            <label for="mana">Mana</label><input id="mana" type="checkbox" name="mana" value="mana" /><br />
+                            <label for="mana_regen">Mana Regen</label><input id="mana_regen" type="checkbox" name="mana_regen" value="mana_regen" /><br />
+                            <label for="armor">Armor</label><input id="armor" type="checkbox" name="armor" value="armor" /><br />
+                            <label for="enemy_armor_reduction">Enemy Armor Reduction</label><input id="enemy_armor_reduction" type="checkbox" name="enemy_armor_reduction" value="enemy_armor_reduction" /><br />
+                            <label for="magic_resist">Magic Resistance</label><input id="magic_resist" type="checkbox" name="magic_resist" value="magic_resist" /><br />
+                            <label for="magic_immune">Magic Immunity</label><input id="magic_immune" type="checkbox" name="magic_immune" value="magic_immune" /><br />
+                            <label for="stun">Stun</label><input id="stun" type="checkbox" name="stun" value="stun" /><br />
+                            <label for="evasion">Evasion</label><input id="evasion" type="checkbox" name="evasion" value="evasion" /><br />
+                            <label for="displacement">Displacement</label><input id="displacement" type="checkbox" name="displacement" value="displacement" /><br />
+                            <label for="summon">Summon</label><input id="summon" type="checkbox" name="summon" value="summon" /><br />
+                            <label for="invulnerable">Invulnerable</label><input id="invulnerable" type="checkbox" name="invulnerable" value="invulnerable" /><br />
+                            <label for="cooldown_reset">Cooldown Reset</label><input id="cooldown_reset" type="checkbox" name="cooldown_reset" value="cooldown_reset" /><br />
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="items">
+                    <figure class='item'>
+                            <img class='image abyssal_blade strength damage stun' width='51' height='38' />
+                            <figcaption class='description'>
+                                Abyssal Blade
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image aghanims_scepter strength agility intelligence health mana' width='51' height='38' />
+                            <figcaption class='description'>
+                                Aghanim&#39;s Scepter
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image animal_courier consumables' width='51' height='38' />
+                            <figcaption class='description'>
+                                Animal Courier
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image arcane_boots move_speed mana mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Arcane Boots
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image armlet_of_mordiggian health_regen damage armor attack_speed strength' width='51' height='38' />
+                            <figcaption class='description'>
+                                Armlet of Mordiggian
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image assault_cuirass armor attack_speed enemy_armor_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Assault Cuirass
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image band_of_elvenskin agility' width='51' height='38' />
+                            <figcaption class='description'>
+                                Band of Elvenskin
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image battle_fury health_regen mana_regen damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Battle Fury
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image belt_of_strength strength' width='51' height='38' />
+                            <figcaption class='description'>
+                                Belt of Strength
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image black_king_bar strength damage magic_immune' width='51' height='38' />
+                            <figcaption class='description'>
+                                Black King Bar
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image blade_mail intelligence damage armor pure_damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Blade Mail
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image blade_of_alacrity agility' width='51' height='38' />
+                            <figcaption class='description'>
+                                Blade of Alacrity
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image blades_of_attack damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Blades of Attack
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image blink_dagger displacement' width='51' height='38' />
+                            <figcaption class='description'>
+                                Blink Dagger
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image bloodstone health mana health_regen mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Bloodstone
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image boots_of_speed move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Boots of Speed
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image boots_of_travel teleport move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Boots of Travel
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image bottle consumables health_regen mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Bottle
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image bracer strength agility intelligence damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Bracer
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image broadsword damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Broadsword 
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image buckler strength agility intelligence armor' width='51' height='38' />
+                            <figcaption class='description'>
+                                Buckler
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image butterfly agility damage evasion attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Butterfly
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image chainmail armor' width='51' height='38' />
+                            <figcaption class='description'>
+                                Chainmail 
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image circlet strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Circlet
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image clarity consumables mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Clarity
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image claymore damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Claymore 
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image cloack magic_resist' width='51' height='38' />
+                            <figcaption class='description'>
+                                Cloack
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image crystalys damage critical_damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Crystalys
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image daedalus damage critical_damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Daedalus
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image dagon strength agility intelligence damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Dagon
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image demon_edge damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Demon Edge
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image desolator damage enemy_armor_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Desolator
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image diffusal_blade agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Diffusal Blade
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image divine_rapier damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Divine Rapier
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image drum_of_endurance strength agility intelligence damage attack_speed move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Drum of Endurance
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image dust_of_appearance consumables true_sight' width='51' height='38' />
+                            <figcaption class='description'>
+                                Dust of Appearance
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image eaglesong agility' width='51' height='38' />
+                            <figcaption class='description'>
+                                Eaglesong
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image energy_booster mana' width='51' height='38' />
+                            <figcaption class='description'>
+                                Energy Booster
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ethereal_blade strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ethereal Blade
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image euls_scepter_of_divinity intelligence mana_regen move_speed invulnerable' width='51' height='38' />
+                            <figcaption class='description'>
+                                Eul&#39;s Scepter of Divinity
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image eye_of_skadi strength agility intelligence health mana enemy_attack_speed_reduction enemy_move_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Eye of Skadi
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image flying_courier consumables' width='51' height='38' />
+                            <figcaption class='description'>
+                                Flying Courier
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image force_staff displacement intelligence health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Force Staff
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image gauntlets_of_strength strength' width='51' height='38' />
+                            <figcaption class='description'>
+                                Gauntlets of Strength
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image gem_of_true_sight true_sight' width='51' height='38' />
+                            <figcaption class='description'>
+                                Gem of True Sight
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ghost_scepter strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ghost Scepter
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image gloves_of_haste attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Gloves of Haste
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image hand_of_midas attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Hand of Midas
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image headdress strength agility intelligence health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Headdress
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image healing_salve consumables health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Healing Salve
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image heart_of_tarrasque strength health health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Heart of Tarrasque
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image heavens_blade strength damage evasion enemy_attack_speed_reduction enemy_move_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Heaven&#39;s Blade
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image helm_of_iron_will armor health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Helm of Iron Will
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image helm_of_the_dominator damage armor lifesteal' width='51' height='38' />
+                            <figcaption class='description'>
+                                Helm of the Dominator
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image hood_of_defiance health_regen magic_resistance' width='51' height='38' />
+                            <figcaption class='description'>
+                                Hood of Defiance
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image hyperstone attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Hyperstone
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image iron_branch strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Iron Branch
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image javelin damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Javelin 
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image linkens_sphere strength agility intelligence health_regen mana_regen damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Linken&#39s Sphere
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image maelstrom damage attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Maelstrom
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image magic_stick health_regen mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Magic Stick
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image magic_wand strength agility intelligence health_regen mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Magic Wand
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image manta_style strength agility intelligence attack_speed move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Manta Style
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image mantle_of_intelligence intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Mantle of Intelligence
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image mask_of_madness lifesteal attack_speed move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Mask of Madness
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image medallion_of_courage mana_regen armor enemy_armor_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Medallion of Courage
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image mekansm strength agility intelligence health_regen armor' width='51' height='38' />
+                            <figcaption class='description'>
+                                Mekansm
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image mithril_hammer damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Mithril Hammer
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image mjollnir damage attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Mjollnir
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image monkey_king_bar damage attack_speed stun' width='51' height='38' />
+                            <figcaption class='description'>
+                                Monkey King Bar
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image morbid_mask lifesteal' width='51' height='38' />
+                            <figcaption class='description'>
+                                Morbid Mask
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image mystic_staff intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Mystic Staff
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image necronomicon strength intelligence summon' width='51' height='38' />
+                            <figcaption class='description'>
+                                Necronomicon
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image null_talisman strength agility intelligence damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Null Talisman
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image oblivion_staff intelligence mana_regen damage attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Oblivion Staff
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image observer_ward consumables' width='51' height='38' />
+                            <figcaption class='description'>
+                                Observer Ward
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ogre_club strength' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ogre Club
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image orb_of_venom enemy_move_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Orb of Venom
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image orchid_malevolence intelligence mana_regen damage attack_speed silence damage_amplification' width='51' height='38' />
+                            <figcaption class='description'>
+                                Orchid Malevolence
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image perseverance health_regen mana_regen damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Perseverance
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image phase_boots damage move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Phase Boots
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image pipe_of_insight health_regen magic_resist magic_damage_block' width='51' height='38' />
+                            <figcaption class='description'>
+                                Pipe of Insight
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image platemail armor' width='51' height='38' />
+                            <figcaption class='description'>
+                                Platemail 
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image point_booster health mana' width='51' height='38' />
+                            <figcaption class='description'>
+                                Point Booster
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image poor_mans_shield agility damage_block' width='51' height='38' />
+                            <figcaption class='description'>
+                                Poor Man&#39;s Shield
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image power_treads move_speed attack_speed strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Power Treads
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image quarterstaff attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Quarterstaff 
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image quelling_blade damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Quelling Blade
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image radiance damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Radiance
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image reaver strength' width='51' height='38' />
+                            <figcaption class='description'>
+                                Reaver
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image refresher_orb intelligence health_regen mana_regen damage cooldown_reset' width='51' height='38' />
+                            <figcaption class='description'>
+                                Refresher Orb
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ring_of_aquila damage armor mana_regen strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ring of Aquila
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ring_of_basilius damage armor mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ring of Basilius
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ring_of_health health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ring of Health
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ring_of_protection armor' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ring of Protection
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ring_of_regen health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ring of Regen
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image robe_of_the_magi intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Robe of the Magi
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image rod_of_atos intelligence health enemy_move_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Rod of Atos
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image sacred_relic damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Sacred Relic
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image sages_mask mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Sage&#39;s Mask
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image sange_and_yasha strength agility damage attack_speed move_speed enemy_attack_speed_reduction enemy_move_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Sange and Yasha
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image sange strength damage enemy_attack_speed_reduction enemy_move_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Sange
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image satanic strength damage armor lifesteal' width='51' height='38' />
+                            <figcaption class='description'>
+                                Satanic
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image scythe_of_vyse strength agility intelligence mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Scythe of Vyse
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image sentry_ward consumables true_sight' width='51' height='38' />
+                            <figcaption class='description'>
+                                Sentry Ward
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image shadow_amulet invisibility attack_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Shadow Amulet
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image shadow_blade damage attack_speed invisibility' width='51' height='38' />
+                            <figcaption class='description'>
+                                Shadow Blade
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image shivas_guard intelligence armor enemy_attack_speed_reduction' width='51' height='38' />
+                            <figcaption class='description'>
+                                Shiva&#39;s Guard
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image skull_basher strength damage stun' width='51' height='38' />
+                            <figcaption class='description'>
+                                Skull Basher
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image slippers_of_agility agility' width='51' height='38' />
+                            <figcaption class='description'>
+                                Slippers of Agility
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image smoke_of_deceit consumables invisibility' width='51' height='38' />
+                            <figcaption class='description'>
+                                Smoke Of Deceit
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image soul_booster health mana health_regen mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Soul Booster
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image soul_ring health_regen mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Soul Ring
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image staff_of_wizardry intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Staff of Wizardry
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image stout_shield damage_block' width='51' height='38' />
+                            <figcaption class='description'>
+                                Stout Shield
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image talisman_of_evasion evasion' width='51' height='38' />
+                            <figcaption class='description'>
+                                Talisman of Evasion
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image tango consumables health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Tango
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image town_portal_scroll consumables teleport' width='51' height='38' />
+                            <figcaption class='description'>
+                                Town Portal Scroll
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image tranquil_boots move_speed armor health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Tranquil Boots
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image ultimate_orb strength agility intelligence' width='51' height='38' />
+                            <figcaption class='description'>
+                                Ultimate Orb
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image urn_of_shadows strength mana_regen health_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Urn of Shadows
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image vanguard health health_regen damage_block' width='51' height='38' />
+                            <figcaption class='description'>
+                                Vanguard
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image veil_of_discord intelligence health_regen armor magic_damage_amplification' width='51' height='38' />
+                            <figcaption class='description'>
+                                Veil of Discord
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image vitality_booster health' width='51' height='38' />
+                            <figcaption class='description'>
+                                Vitality Booster
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image vladimirs_offering health_regen lifesteal damage armor mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Vladimir&#39;s Offering
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image void_stone mana_regen' width='51' height='38' />
+                            <figcaption class='description'>
+                                Void Stone
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image wraith_band strength agility intelligence damage' width='51' height='38' />
+                            <figcaption class='description'>
+                                Wraith Band
+                            </figcaption>
+                        </figure><figure class='item'>
+                            <img class='image yasha agility attack_speed move_speed' width='51' height='38' />
+                            <figcaption class='description'>
+                                Yasha
+                            </figcaption>
+                        </figure>                </div>
+            </div>
+        </div>
+    </body>
+</html>
