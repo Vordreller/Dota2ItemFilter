@@ -43,7 +43,9 @@
                             <label for="enemy_armor_reduction">Enemy Armor Reduction</label><input id="enemy_armor_reduction" type="checkbox" name="enemy_armor_reduction" value="enemy_armor_reduction" /><br />
                             <label for="magic_resist">Magic Resistance</label><input id="magic_resist" type="checkbox" name="magic_resist" value="magic_resist" /><br />
                             <label for="magic_immune">Magic Immunity</label><input id="magic_immune" type="checkbox" name="magic_immune" value="magic_immune" /><br />
+                            <label for="ministun">Mini-Stun</label><input id="ministun" type="checkbox" name="ministun" value="ministun" /><br />
                             <label for="stun">Stun</label><input id="stun" type="checkbox" name="stun" value="stun" /><br />
+                            <label for="silence">Silence</label><input id="silence" type="checkbox" name="silence" value="silence" /><br />
                             <label for="evasion">Evasion</label><input id="evasion" type="checkbox" name="evasion" value="evasion" /><br />
                             <label for="displacement">Displacement</label><input id="displacement" type="checkbox" name="displacement" value="displacement" /><br />
                             <label for="summon">Summon</label><input id="summon" type="checkbox" name="summon" value="summon" /><br />
@@ -132,7 +134,7 @@
                         "Necronomicon" => "necronomicon strength intelligence summon",
                         "Dagon" => "dagon strength agility intelligence damage",
                         "Rod of Atos" => "rod_of_atos intelligence health enemy_move_speed_reduction",
-                        "Orchid Malevolence" => "orchid_malevolence intelligence mana_regen damage attack_speed silence damage_amplification",
+                        "Orchid Malevolence" => "orchid_malevolence intelligence mana_regen damage attack_speed silence damage_amplification silence",
                         "Aghanim&#39;s Scepter" => "aghanims_scepter strength agility intelligence health mana",
                         "Refresher Orb" => "refresher_orb intelligence health_regen mana_regen damage cooldown_reset",
                         "Scythe of Vyse" => "scythe_of_vyse strength agility intelligence mana_regen",
@@ -143,12 +145,12 @@
                         "Battle Fury" => "battle_fury health_regen mana_regen damage",
                         "Ethereal Blade" => "ethereal_blade strength agility intelligence",
                         "Radiance" => "radiance damage",
-                        "Monkey King Bar" => "monkey_king_bar damage attack_speed stun",
+                        "Monkey King Bar" => "monkey_king_bar damage attack_speed ministun",
                         "Daedalus" => "daedalus damage critical_damage",
                         "Butterfly" => "butterfly agility damage evasion attack_speed",
                         "Divine Rapier" => "divine_rapier damage",
                         "Abyssal Blade" => "abyssal_blade strength damage stun",
-                        "Hood of Defiance" => "hood_of_defiance health_regen magic_resistance",
+                        "Hood of Defiance" => "hood_of_defiance health_regen magic_resist",
                         "Blade Mail" => "blade_mail intelligence damage armor pure_damage",
                         "Vanguard" => "vanguard health health_regen damage_block",
                         "Soul Booster" => "soul_booster health mana health_regen mana_regen",
@@ -165,7 +167,7 @@
                         "Yasha" => "yasha agility attack_speed move_speed",
                         "Maelstrom" => "maelstrom damage attack_speed",
                         "Diffusal Blade" => "diffusal_blade agility intelligence",
-                        "Heaven&#39;s Blade" => "heavens_blade strength damage evasion enemy_attack_speed_reduction enemy_move_speed_reduction",
+                        "Heaven&#39;s Halberd" => "heavens_halberd strength damage evasion enemy_attack_speed_reduction enemy_move_speed_reduction",
                         "Sange and Yasha" => "sange_and_yasha strength agility damage attack_speed move_speed enemy_attack_speed_reduction enemy_move_speed_reduction",
                         "Desolator" => "desolator damage enemy_armor_reduction",
                         "Mjollnir" => "mjollnir damage attack_speed",
