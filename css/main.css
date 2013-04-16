@@ -7,7 +7,7 @@
 */
 
 #left {
-    width: 400px;
+    width: 350px;
     height: 100%;
     position: fixed;
     
@@ -24,7 +24,7 @@ label {
     height: 100%;
     position: fixed;
     overflow-y: scroll;
-    margin-left: 400px;
+    margin-left: 350px;
     
     clear: both;
     float: left;
@@ -205,7 +205,7 @@ figure:hover {
 .heart_of_tarrasque {
     background-position: 0 -1824px;
 }
-.heavens_blade {
+.heavens_halberd {
     background-position: 0 -1862px;
 }
 .helm_of_iron_will {
