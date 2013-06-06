@@ -23,7 +23,27 @@ $(document).ready(function() {
 
     //Make all checkboxes display under eachother.
     setMaxWidth(getMaxWidth());
-
+    
+    //-------------------------------
+    
+    var setDisabledColor = function() {
+    //Get all checkboxes
+    var boxes = $('input:checkbox');
+    
+    
+    $.each(boxes, function(indexInArray, valueOfElement) {
+        //If a checkbox is disabled, set the background to a color to show it.
+        //I could have added or removed a CSS class, but I'm doing that later in the file and right now I also want to use this method.
+        if($(boxes[indexInArray]).attr('disabled')){
+            $(boxes[indexInArray]).parent().css({'background-color': 'red'});
+        } else {
+            //Else, remove colored background
+            $(boxes[indexInArray]).parent().css({'background-color': 'white'});
+        }
+    });
+    
+    }
+    
     /**
      * End view section
      */
@@ -32,7 +52,7 @@ $(document).ready(function() {
     /**
      * Start logic section
      */
-
+    
     //Upon checking or unchecking a checkbox, hide or display all items not related to it.
     $('input:checkbox').on('change', function() {
         //First thing to do on every change: go over all checkboxes.
@@ -54,7 +74,7 @@ $(document).ready(function() {
             //Re-enable all checkboxes
             $('input:checkbox').each(function() {
                 $(this).attr('disabled', false);
-            })
+            });
         } else {
             $('figure').each(function() {
                 var classes = $(this).children('img').attr('class').split(' ');
@@ -67,7 +87,9 @@ $(document).ready(function() {
                         allPresent = false;
                     }
                 });
-
+                
+                //If an item has the attributes of all checked checkboxes, remove hidden.
+                //If even 1 is missing, set hidden
                 if (!allPresent) {
                     this.classList.add('hidden');
                 } else {
@@ -98,7 +120,12 @@ $(document).ready(function() {
             });
 
         }
+        
+        //And set the backgroundcolor for the disabled checkboxes
+        setDisabledColor();
     });
+    
+    
     /**
      * End logic section
      */

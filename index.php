@@ -4,9 +4,9 @@
         <title>DOTA2 Items by type</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="Content-Language" content="en-US" />
-        <link rel="stylesheet" href="css/normalize-2.1.1.css">
+        <link rel="stylesheet" href="css/normalize-2.1.2.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -16,41 +16,41 @@
                     <form>
                         <fieldset>
                             <legend>Select your choices:</legend>
-                            <label for="consumables">Consumables</label><input id="consumables" type="checkbox" name="consumables" value="consumables" /><br />
-                            <label for="teleport">Teleport</label><input id="teleport" type="checkbox" name="teleport" value="teleport" /><br />
-                            <label for="invisibility">Invisibility</label><input id="invisibility" type="checkbox" name="invisibility" value="invisibility" /><br />
-                            <label for="true_sight">True Sight</label><input id="true_sight" type="checkbox" name="true_sight" value="true_sight" /><br />
-                            <label for="move_speed">Movement Speed</label><input id="move_speed" type="checkbox" name="move_speed" value="move_speed" /><br />
-                            <label for="enemy_move_speed_reduction">Enemy Movement Speed Reduction</label><input id="enemy_move_speed_reduction" type="checkbox" name="enemy_move_speed_reduction" value="enemy_move_speed_reduction" /><br />
-                            <label for="strength">Strength</label><input id="strength" type="checkbox" name="strength" value="strength" /><br />
-                            <label for="agility">Agility</label><input id="agility" type="checkbox" name="agility" value="agility" /><br />
-                            <label for="intelligence">Intelligence</label><input id="intelligence" type="checkbox" name="intelligence" value="intelligence" /><br />
-                            <label for="damage">Damage</label><input id="damage" type="checkbox" name="damage" value="damage" /><br />
-                            <label for="pure_damage">Pure Damage</label><input id="pure_damage" type="checkbox" name="pure_damage" value="pure_damage" /><br />
-                            <label for="critical_damage">Critical Damage</label><input id="critical_damage" type="checkbox" name="critical_damage" value="critical_damage" /><br />
-                            <label for="damage_amplification">Damage Amplification</label><input id="damage_amplification" type="checkbox" name="damage_amplification" value="damage_amplification" /><br />
-                            <label for="magic_damage_amplification">Magic Damage Amplification</label><input id="magic_damage_amplification" type="checkbox" name="magic_damage_amplification" value="magic_damage_amplification" /><br />
-                            <label for="damage_block">Damage Block</label><input id="damage_block" type="checkbox" name="damage_block" value="damage_block" /><br />
-                            <label for="magic_damage_block">Magic Damage Block</label><input id="magic_damage_block" type="checkbox" name="magic_damage_block" value="magic_damage_block" /><br />
-                            <label for="attack_speed">Attack Speed</label><input id="attack_speed" type="checkbox" name="attack_speed" value="attack_speed" /><br />
-                            <label for="enemy_attack_speed_reduction">Enemy Attack Speed Reduction</label><input id="enemy_attack_speed_reduction" type="checkbox" name="enemy_attack_speed_reduction" value="enemy_attack_speed_reduction" /><br />
-                            <label for="lifesteal">Lifesteal</label><input id="lifesteal" type="checkbox" name="lifesteal" value="lifesteal" /><br />
-                            <label for="health">Health</label><input id="health" type="checkbox" name="health" value="health" /><br />
-                            <label for="health_regen">Health Regen</label><input id="health_regen" type="checkbox" name="health_regen" value="health_regen" /><br />
-                            <label for="mana">Mana</label><input id="mana" type="checkbox" name="mana" value="mana" /><br />
-                            <label for="mana_regen">Mana Regen</label><input id="mana_regen" type="checkbox" name="mana_regen" value="mana_regen" /><br />
-                            <label for="armor">Armor</label><input id="armor" type="checkbox" name="armor" value="armor" /><br />
-                            <label for="enemy_armor_reduction">Enemy Armor Reduction</label><input id="enemy_armor_reduction" type="checkbox" name="enemy_armor_reduction" value="enemy_armor_reduction" /><br />
-                            <label for="magic_resist">Magic Resistance</label><input id="magic_resist" type="checkbox" name="magic_resist" value="magic_resist" /><br />
-                            <label for="magic_immune">Magic Immunity</label><input id="magic_immune" type="checkbox" name="magic_immune" value="magic_immune" /><br />
-                            <label for="ministun">Mini-Stun</label><input id="ministun" type="checkbox" name="ministun" value="ministun" /><br />
-                            <label for="stun">Stun</label><input id="stun" type="checkbox" name="stun" value="stun" /><br />
-                            <label for="silence">Silence</label><input id="silence" type="checkbox" name="silence" value="silence" /><br />
-                            <label for="evasion">Evasion</label><input id="evasion" type="checkbox" name="evasion" value="evasion" /><br />
-                            <label for="displacement">Displacement</label><input id="displacement" type="checkbox" name="displacement" value="displacement" /><br />
-                            <label for="summon">Summon</label><input id="summon" type="checkbox" name="summon" value="summon" /><br />
-                            <label for="invulnerable">Invulnerable</label><input id="invulnerable" type="checkbox" name="invulnerable" value="invulnerable" /><br />
-                            <label for="cooldown_reset">Cooldown Reset</label><input id="cooldown_reset" type="checkbox" name="cooldown_reset" value="cooldown_reset" /><br />
+                            <div><label for="consumables">Consumables</label><input id="consumables" type="checkbox" name="consumables" value="consumables" /></div>
+                            <div><label for="teleport">Teleport</label><input id="teleport" type="checkbox" name="teleport" value="teleport" /></div>
+                            <div><label for="invisibility">Invisibility</label><input id="invisibility" type="checkbox" name="invisibility" value="invisibility" /></div>
+                            <div><label for="true_sight">True Sight</label><input id="true_sight" type="checkbox" name="true_sight" value="true_sight" /></div>
+                            <div><label for="move_speed">Movement Speed</label><input id="move_speed" type="checkbox" name="move_speed" value="move_speed" /></div>
+                            <div><label for="enemy_move_speed_reduction">Enemy Movement Speed Reduction</label><input id="enemy_move_speed_reduction" type="checkbox" name="enemy_move_speed_reduction" value="enemy_move_speed_reduction" /></div>
+                            <div><label for="strength">Strength</label><input id="strength" type="checkbox" name="strength" value="strength" /></div>
+                            <div><label for="agility">Agility</label><input id="agility" type="checkbox" name="agility" value="agility" /></div>
+                            <div><label for="intelligence">Intelligence</label><input id="intelligence" type="checkbox" name="intelligence" value="intelligence" /></div>
+                            <div><label for="damage">Damage</label><input id="damage" type="checkbox" name="damage" value="damage" /></div>
+                            <div><label for="pure_damage">Pure Damage</label><input id="pure_damage" type="checkbox" name="pure_damage" value="pure_damage" /></div>
+                            <div><label for="critical_damage">Critical Damage</label><input id="critical_damage" type="checkbox" name="critical_damage" value="critical_damage" /></div>
+                            <div><label for="damage_amplification">Damage Amplification</label><input id="damage_amplification" type="checkbox" name="damage_amplification" value="damage_amplification" /></div>
+                            <div><label for="magic_damage_amplification">Magic Damage Amplification</label><input id="magic_damage_amplification" type="checkbox" name="magic_damage_amplification" value="magic_damage_amplification" /></div>
+                            <div><label for="damage_block">Damage Block</label><input id="damage_block" type="checkbox" name="damage_block" value="damage_block" /></div>
+                            <div><label for="magic_damage_block">Magic Damage Block</label><input id="magic_damage_block" type="checkbox" name="magic_damage_block" value="magic_damage_block" /></div>
+                            <div><label for="attack_speed">Attack Speed</label><input id="attack_speed" type="checkbox" name="attack_speed" value="attack_speed" /></div>
+                            <div><label for="enemy_attack_speed_reduction">Enemy Attack Speed Reduction</label><input id="enemy_attack_speed_reduction" type="checkbox" name="enemy_attack_speed_reduction" value="enemy_attack_speed_reduction" /></div>
+                            <div><label for="lifesteal">Lifesteal</label><input id="lifesteal" type="checkbox" name="lifesteal" value="lifesteal" /></div>
+                            <div><label for="health">Health</label><input id="health" type="checkbox" name="health" value="health" /></div>
+                            <div><label for="health_regen">Health Regen</label><input id="health_regen" type="checkbox" name="health_regen" value="health_regen" /></div>
+                            <div><label for="mana">Mana</label><input id="mana" type="checkbox" name="mana" value="mana" /></div>
+                            <div><label for="mana_regen">Mana Regen</label><input id="mana_regen" type="checkbox" name="mana_regen" value="mana_regen" /></div>
+                            <div><label for="armor">Armor</label><input id="armor" type="checkbox" name="armor" value="armor" /></div>
+                            <div><label for="enemy_armor_reduction">Enemy Armor Reduction</label><input id="enemy_armor_reduction" type="checkbox" name="enemy_armor_reduction" value="enemy_armor_reduction" /></div>
+                            <div><label for="magic_resist">Magic Resistance</label><input id="magic_resist" type="checkbox" name="magic_resist" value="magic_resist" /></div>
+                            <div><label for="magic_immune">Magic Immunity</label><input id="magic_immune" type="checkbox" name="magic_immune" value="magic_immune" /></div>
+                            <div><label for="ministun">Mini-Stun</label><input id="ministun" type="checkbox" name="ministun" value="ministun" /></div>
+                            <div><label for="stun">Stun</label><input id="stun" type="checkbox" name="stun" value="stun" /></div>
+                            <div><label for="silence">Silence</label><input id="silence" type="checkbox" name="silence" value="silence" /></div>
+                            <div><label for="evasion">Evasion</label><input id="evasion" type="checkbox" name="evasion" value="evasion" /></div>
+                            <div><label for="displacement">Displacement</label><input id="displacement" type="checkbox" name="displacement" value="displacement" /></div>
+                            <div><label for="summon">Summon</label><input id="summon" type="checkbox" name="summon" value="summon" /></div>
+                            <div><label for="invulnerable">Invulnerable</label><input id="invulnerable" type="checkbox" name="invulnerable" value="invulnerable" /></div>
+                            <div><label for="cooldown_reset">Cooldown Reset</label><input id="cooldown_reset" type="checkbox" name="cooldown_reset" value="cooldown_reset" /></div>
                         </fieldset>
                     </form>
                 </div>
@@ -199,6 +199,9 @@
                         echo $result;
                     }   
                     ?>
+                </div>
+                <div id='detail'>
+                    
                 </div>
             </div>
         </div>
