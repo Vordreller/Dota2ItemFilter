@@ -1,0 +1,40 @@
+{
+	"Abyssal Blade": {
+		"Attributes": ["strength","damage","stun"],
+		"Bonus": ["+10 Strength","+100 Damage"],
+		"Cost": 6750,
+		"Description": "The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul.",
+		"abilities": {
+			"Overwhelm": {
+				"description": "Stun a target enemy unit for 2 seconds. Goes through Magic Immunity.",
+				"Extra": "Range 140",
+				"cooldown": 60,
+				"mana": 150,
+				"Ability": "Target Unit",
+				"Affects": "Enemies"
+			},
+			"Bash": {
+				"description": "Gives a chance to stun for 1.4 seconds.",
+				"Extra": "Bash Chance for Melee Heroes: 25%<br />Bash Chance for Ranged Heroes: 10%",
+				"cooldown": 2,
+				"Ability": "Passive",
+				"Affects": "Enemies"
+			}
+		},
+		"Extra Info": "Can be disassembled. Cannot be purchased by Slardar, Faceless Void, Troll Warlord, Spirit Breaker.",
+		"position": "0 -38px"
+	},
+	"Aghanim&#39;s Scepter": {
+		"Attributes": ["strength", "agility", "intelligence", "health", "mana"],
+		"Bonus": ["+10 Strength","+10 Agility", "+10 Intelligence", "+200 HP", "+150 Mana"],
+		"Cost": 4200,
+		"Description": "The scepter of a wizard with demigod-like powers.",
+		"abilities": {
+			"Ultimate Upgrade": {
+				"description": "Upgrades the ultimates of certain heroes. ",
+				"Ability": "Passive"
+			}
+		},
+		"position": "0 -4484px"
+	}
+}

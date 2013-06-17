@@ -190,7 +190,7 @@
                     natsort($item_names);
                     
                     foreach($item_names as $name => $class){
-                        $result = "<figure class='item'>
+                        $result = "<figure class='item' id='$name'>
                             <img class='image $class' width='51' height='38' />
                             <figcaption class='description'>
                                 $name

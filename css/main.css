@@ -7,7 +7,7 @@
 */
 
 #left {
-    width: 350px;
+    width: 320px;
     height: 100%;
     position: fixed;
     
@@ -29,7 +29,7 @@ label {
     height: 100%;
     position: fixed;
     overflow-y: scroll;
-    margin-left: 350px;
+    margin-left: 320px;
     
     clear: both;
     float: left;
