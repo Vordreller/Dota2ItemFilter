@@ -1,13 +1,5 @@
-/* 
-    Document   : main
-    Created on : Apr 8, 2013, 7:19:44 PM
-    Author     : koen
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
 #left {
-    width: 320px;
+    width: 290px;
     height: 100%;
     position: fixed;
     
@@ -29,7 +21,7 @@ label {
     height: 100%;
     position: fixed;
     overflow-y: scroll;
-    margin-left: 320px;
+    margin-left: 290px;
     
     clear: both;
     float: left;

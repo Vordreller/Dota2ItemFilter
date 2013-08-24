@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Language" content="en-US" />
         <link rel="stylesheet" href="css/normalize-2.1.2.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -21,7 +21,7 @@
                             <div><label for="invisibility">Invisibility</label><input id="invisibility" type="checkbox" name="invisibility" value="invisibility" /></div>
                             <div><label for="true_sight">True Sight</label><input id="true_sight" type="checkbox" name="true_sight" value="true_sight" /></div>
                             <div><label for="move_speed">Movement Speed</label><input id="move_speed" type="checkbox" name="move_speed" value="move_speed" /></div>
-                            <div><label for="enemy_move_speed_reduction">Enemy Movement Speed Reduction</label><input id="enemy_move_speed_reduction" type="checkbox" name="enemy_move_speed_reduction" value="enemy_move_speed_reduction" /></div>
+                            <div><label for="move_speed_reduction">Movement Speed Reduction</label><input id="move_speed_reduction" type="checkbox" name="move_speed_reduction" value="move_speed_reduction" /></div>
                             <div><label for="strength">Strength</label><input id="strength" type="checkbox" name="strength" value="strength" /></div>
                             <div><label for="agility">Agility</label><input id="agility" type="checkbox" name="agility" value="agility" /></div>
                             <div><label for="intelligence">Intelligence</label><input id="intelligence" type="checkbox" name="intelligence" value="intelligence" /></div>
@@ -33,7 +33,7 @@
                             <div><label for="damage_block">Damage Block</label><input id="damage_block" type="checkbox" name="damage_block" value="damage_block" /></div>
                             <div><label for="magic_damage_block">Magic Damage Block</label><input id="magic_damage_block" type="checkbox" name="magic_damage_block" value="magic_damage_block" /></div>
                             <div><label for="attack_speed">Attack Speed</label><input id="attack_speed" type="checkbox" name="attack_speed" value="attack_speed" /></div>
-                            <div><label for="enemy_attack_speed_reduction">Enemy Attack Speed Reduction</label><input id="enemy_attack_speed_reduction" type="checkbox" name="enemy_attack_speed_reduction" value="enemy_attack_speed_reduction" /></div>
+                            <div><label for="attack_speed_reduction">Attack Speed Reduction</label><input id="attack_speed_reduction" type="checkbox" name="attack_speed_reduction" value="attack_speed_reduction" /></div>
                             <div><label for="lifesteal">Lifesteal</label><input id="lifesteal" type="checkbox" name="lifesteal" value="lifesteal" /></div>
                             <div><label for="health">Health</label><input id="health" type="checkbox" name="health" value="health" /></div>
                             <div><label for="health_regen">Health Regen</label><input id="health_regen" type="checkbox" name="health_regen" value="health_regen" /></div>
@@ -84,13 +84,13 @@
                         "Quelling Blade" => "quelling_blade damage",
                         "Stout Shield" => "stout_shield damage_block",
                         "Blades of Attack" => "blades_of_attack damage",
-                        "Chainmail " => "chainmail armor",
-                        "Quarterstaff " => "quarterstaff attack_speed",
+                        "Chainmail" => "chainmail armor",
+                        "Quarterstaff" => "quarterstaff attack_speed",
                         "Helm of Iron Will" => "helm_of_iron_will armor health_regen",
-                        "Broadsword " => "broadsword damage",
-                        "Claymore " => "claymore damage",
-                        "Platemail " => "platemail armor",
-                        "Javelin " => "javelin damage",
+                        "Broadsword" => "broadsword damage",
+                        "Claymore" => "claymore damage",
+                        "Platemail" => "platemail armor",
+                        "Javelin" => "javelin damage",
                         "Mithril Hammer" => "mithril_hammer damage",
                         "Magic Stick" => "magic_stick health_regen mana_regen",
                         "Sage&#39;s Mask" => "sages_mask mana_regen",
@@ -133,7 +133,7 @@
                         "Eul&#39;s Scepter of Divinity" => "euls_scepter_of_divinity intelligence mana_regen move_speed invulnerable",
                         "Necronomicon" => "necronomicon strength intelligence summon",
                         "Dagon" => "dagon strength agility intelligence damage",
-                        "Rod of Atos" => "rod_of_atos intelligence health enemy_move_speed_reduction",
+                        "Rod of Atos" => "rod_of_atos intelligence health move_speed_reduction",
                         "Orchid Malevolence" => "orchid_malevolence intelligence mana_regen damage attack_speed silence damage_amplification silence",
                         "Aghanim&#39;s Scepter" => "aghanims_scepter strength agility intelligence health mana",
                         "Refresher Orb" => "refresher_orb intelligence health_regen mana_regen damage cooldown_reset",
@@ -155,25 +155,25 @@
                         "Vanguard" => "vanguard health health_regen damage_block",
                         "Soul Booster" => "soul_booster health mana health_regen mana_regen",
                         "Black King Bar" => "black_king_bar strength damage magic_immune",
-                        "Shiva&#39;s Guard" => "shivas_guard intelligence armor enemy_attack_speed_reduction",
+                        "Shiva&#39;s Guard" => "shivas_guard intelligence armor attack_speed_reduction",
                         "Manta Style" => "manta_style strength agility intelligence attack_speed move_speed",
                         "Bloodstone" => "bloodstone health mana health_regen mana_regen",
-                        "Linken&#39s Sphere" => "linkens_sphere strength agility intelligence health_regen mana_regen damage",
+                        "Linken&#39;s Sphere" => "linkens_sphere strength agility intelligence health_regen mana_regen damage",
                         "Assault Cuirass" => "assault_cuirass armor attack_speed enemy_armor_reduction",
                         "Heart of Tarrasque" => "heart_of_tarrasque strength health health_regen",
                         "Helm of the Dominator" => "helm_of_the_dominator damage armor lifesteal",
                         "Mask of Madness" => "mask_of_madness lifesteal attack_speed move_speed",
-                        "Sange" => "sange strength damage enemy_attack_speed_reduction enemy_move_speed_reduction",
+                        "Sange" => "sange strength damage attack_speed_reduction move_speed_reduction",
                         "Yasha" => "yasha agility attack_speed move_speed",
                         "Maelstrom" => "maelstrom damage attack_speed",
                         "Diffusal Blade" => "diffusal_blade agility intelligence",
-                        "Heaven&#39;s Halberd" => "heavens_halberd strength damage evasion enemy_attack_speed_reduction enemy_move_speed_reduction",
-                        "Sange and Yasha" => "sange_and_yasha strength agility damage attack_speed move_speed enemy_attack_speed_reduction enemy_move_speed_reduction",
+                        "Heaven&#39;s Halberd" => "heavens_halberd strength damage evasion attack_speed_reduction move_speed_reduction",
+                        "Sange and Yasha" => "sange_and_yasha strength agility damage attack_speed move_speed attack_speed_reduction move_speed_reduction",
                         "Desolator" => "desolator damage enemy_armor_reduction",
                         "Mjollnir" => "mjollnir damage attack_speed",
-                        "Eye of Skadi" => "eye_of_skadi strength agility intelligence health mana enemy_attack_speed_reduction enemy_move_speed_reduction",
+                        "Eye of Skadi" => "eye_of_skadi strength agility intelligence health mana attack_speed_reduction move_speed_reduction",
                         "Satanic" => "satanic strength damage armor lifesteal",
-                        "Orb of Venom" => "orb_of_venom enemy_move_speed_reduction",
+                        "Orb of Venom" => "orb_of_venom move_speed_reduction",
                         "Ring of Health" => "ring_of_health health_regen",
                         "Void Stone" => "void_stone mana_regen",
                         "Energy Booster" => "energy_booster mana",
