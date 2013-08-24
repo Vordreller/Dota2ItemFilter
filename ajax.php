@@ -5,6 +5,7 @@ $result = json_decode(file_get_contents("files/dota2itemfilter.json"), true);
 $name = $_POST['name'];
 
 //Return only the specified item
+header('Content-Type: application/json');
 echo json_encode($result[$name]);
 
 ?>
