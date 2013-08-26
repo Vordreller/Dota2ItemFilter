@@ -24,7 +24,7 @@
         "position": "0 -38px"
     },
     "Aghanim&#39;s Scepter": {
-    	"Cost": "4200",
+        "Cost": "4200",
         "Bonus": ["+10 Strength","+10 Agility", "+10 Intelligence", "+200 HP", "+150 Mana"],        
         "Description": "The scepter of a wizard with demigod-like powers.",
         "abilities": {
@@ -49,10 +49,10 @@
         "Bonus": ["+250 Mana","+60 Movement Speed"],
         "abilities": {
             "Replenish Mana": {
-            	"description": "Restores mana in an area around the hero.",
-            	"Mana Restored": 135,
-				"Radius": 600,
-            	"Cooldown": 55,
+                "description": "Restores mana in an area around the hero.",
+                "Mana Restored": 135,
+                "Radius": 600,
+                "Cooldown": 55,
                 "Mana Cost": 25,
                 "Ability Type": "No Target",
                 "Affects": "Allies"
@@ -75,8 +75,8 @@
         "position": "0 -152px"
     },
     "Assault Cuirass": {
-    	"Cost": "5350(1300)",
-    	"Bonus": ["+10 Armor","+35 Attack speed"],
+        "Cost": "5350(1300)",
+        "Bonus": ["+10 Armor","+35 Attack speed"],
         "abilities": {
             "Assault Aura": {
                 "description": "Grants attack speed and armor to nearby allied units, and decreases armor for nearby enemies. Multiple instances of Assault Aura do not stack.",
@@ -91,13 +91,13 @@
         "position": "0 -190px"
     },
     "Band of Elvenskin": {
-    	"Cost": "450",
-    	"Bonus": ["+6 Agility"],
+        "Cost": "450",
+        "Bonus": ["+6 Agility"],
         "position": "0 -608px"
     },
     "Battle Fury": {
-    	"Cost": "4350",
-    	"Bonus": ["+6 HP regeneration","+150&#37; Mana regeneration","+65 Damage"],
+        "Cost": "4350",
+        "Bonus": ["+6 HP regeneration","+150&#37; Mana regeneration","+65 Damage"],
         "abilities": {
             "Cleave": {
                 "description": "Deals a percent of attack damage in a 225 radius around the target. Does not work on ranged heroes. Cleave damage on non-primary targets is not reduced by armor values.",
@@ -108,14 +108,14 @@
         },
         "position": "0 -304px"
     },
-	"Belt of Strength": {
-    	"Cost": "450",
-    	"Bonus": ["+6 Strength"],
+    "Belt of Strength": {
+        "Cost": "450",
+        "Bonus": ["+6 Strength"],
         "position": "0 -266px"
-	},
-	"Black King Bar": {
-    	"Cost": "3900(1300)",
-    	"Bonus": ["+10 Strength","+24 Damage"],
+    },
+    "Black King Bar": {
+        "Cost": "3900(1300)",
+        "Bonus": ["+10 Strength","+24 Damage"],
         "abilities": {
             "Avatar": {
                 "description": "Grants magic immunity. Duration and cooldown decrease with each use. Some Ultimate abilities are able to disable through Black King Bar.",
@@ -127,10 +127,10 @@
         },
         "Extra Info": "Can not be sold.",
         "position": "0 -342px"
-	},
-	"Blade Mail": {
-		"Cost": "2200",
-    	"Bonus": ["+10 Intelligence","+22 Damage","+6 Armor"],
+    },
+    "Blade Mail": {
+        "Cost": "2200",
+        "Bonus": ["+10 Intelligence","+22 Damage","+6 Armor"],
         "abilities": {
             "Damage Return": {
                 "description": "Returns any damage you take to the unit that dealt the damage.",
@@ -143,19 +143,19 @@
         },
         "Extra Info": "Deals pure damage. Does not reflect damage from other blademails. The returned damage is based on the damage you received after armor or magic reduction.",
         "position": "0 -418px"
-	},
-	"Blade of Alacrity": {
-		"Cost": "1000",
-    	"Bonus": ["+10 Agility"],
+    },
+    "Blade of Alacrity": {
+        "Cost": "1000",
+        "Bonus": ["+10 Agility"],
         "position": "0 -456px"
-	},
-	"Blades of Attack": {
-		"Cost": "450",
-    	"Bonus": ["+9 Damage"],
+    },
+    "Blades of Attack": {
+        "Cost": "450",
+        "Bonus": ["+9 Damage"],
         "position": "0 -380px"
-	},
-	"Blink Dagger": {
-		"Cost": "2150",
+    },
+    "Blink Dagger": {
+        "Cost": "2150",
         "abilities": {
             "Blink": {
                 "description": "Teleport to a target point up to 1200 units away. If damage is taken from an enemy hero, Blink Dagger cannot be used for 3 seconds.",
@@ -167,8 +167,8 @@
         },
         "Extra Info": "Can not be bought by Pudge and Vengeful Spirit. Selecting a point outside the maximum range will actually land you at 960 units instead of 1200.",
         "position": "0 -494px"
-	},
-	"Bloodstone": {
+    },
+    "Bloodstone": {
         "Cost": "5050",
         "Bonus": ["+500 HP","+400 Mana","+9 HP regeneration","+200&#37; Mana regeneration"],
         "abilities": {
@@ -187,16 +187,16 @@
         },
         "Extra Info": "Amount of charges lost is rounded up. Range of experience gained while dead is 1000.",
         "position": "0 -532px"
-	},
-	"Boots of Speed": {
-    	"Cost": "450",
-    	"Bonus": ["+50 Movement speed"],
+    },
+    "Boots of Speed": {
+        "Cost": "450",
+        "Bonus": ["+50 Movement speed"],
         "position": "0 -570px"
-	},
-	"Boots of Travel": {
-		"Cost": "2450(2000)",
-    	"Bonus": ["+100 Movement speed"],
-    	"abilities": {
+    },
+    "Boots of Travel": {
+        "Cost": "2450(2000)",
+        "Bonus": ["+100 Movement speed"],
+        "abilities": {
             "Teleport": {
                 "description": "Teleports you to an allied non-hero unit or structure. While channeling, gives 200 range vision on the target and pings your allies&#39; minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
                 "Range": "Global",
@@ -209,7 +209,7 @@
         },
         "Extra Info": "Will automatically target your Fountain if double clicked. Shares cooldown with Town Portal Scroll.",
         "position": "0 -4408px"
-	},
+    },
     "Bottle": {
         "Cost": "600",
         "abilities": {
@@ -226,17 +226,17 @@
         "position": "0 -646px"
     },
     "Bracer": {
-    	"Cost": "525(190)",
-    	"Bonus": ["+6 Strength","+3 Agility","+3 Intelligence","+3 Damage"],
+        "Cost": "525(190)",
+        "Bonus": ["+6 Strength","+3 Agility","+3 Intelligence","+3 Damage"],
         "position": "0 -684px"
     },
     "Broadsword": {
-		"Cost": "1200",
-    	"Bonus": ["+18 Damage"],
+        "Cost": "1200",
+        "Bonus": ["+18 Damage"],
         "position": "0 -760px"
     },
     "Buckler": {
-    	"Cost": "803(200)",
+        "Cost": "803(200)",
         "abilities": {
             "Armor Bonus": {
                 "description": "Gives +2 armor to all nearby allied units. Lasts 25 seconds on heroes, 30 seconds on units.",
@@ -250,9 +250,19 @@
         "position": "0 -798px"
     },
     "Butterfly": {
-    	"Cost": "6000",
-    	"Bonus": ["+30 Agility","+30 Damage","+35&#37; Evasion","+30 Attack speed"],
+        "Cost": "6000",
+        "Bonus": ["+30 Agility","+30 Damage","+35&#37; Evasion","+30 Attack speed"],
         "position": "0 -836px"
+    },
+    "Chainmail": {
+        "Cost": "550",
+        "Bonus": ["+5 Armor"],
+        "position": "0 -874px"
+    },
+    "Circlet": {
+        "Cost": "185",
+        "Bonus": ["+2 Strength","+2 Agility","+2 Intelligence"],
+        "position": "0 -912px"
     },
     "Clarity": {
         "Cost": "50",
@@ -266,6 +276,129 @@
             }
         },
         "position": "0 -950px"
+    },
+    "Claymore": {
+        "Cost": "1400",
+        "Bonus": ["+21 Damage"],
+        "position": "0 -988px"
+    },
+    "Cloack": {
+        "Cost": "550",
+        "Bonus": ["+15&#37;Magic resistance"],
+        "position": "0 -1026px"
+    },
+    "Crystalys": {
+        "Cost": "2150",
+        "Bonus": ["+30 Damage"],
+        "abilities": {
+            "Critical Strike": {
+                "description": "Grants a chance to deal critical damage on an attack.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Critical Chance": "20&#37;",
+                "Critical Damage": "175&#37;"
+            }
+        },
+        "position": "0 -2128px"
+    },
+    "Daedalus": {
+        "Cost": "5550(1000)",
+        "Bonus": ["+81 Damage"],
+        "abilities": {
+            "Critical Strike": {
+                "description": "Grants a chance to deal critical damage on an attack.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Critical Chance": "25&#37;",
+                "Critical Damage": "240&#37;"
+            }
+        },
+        "position": "0 -1710px"
+    },
+    "Dagon": {
+        "Cost": "2730(1250)",
+        "Bonus": ["+3 Strength","+3 Agility","+9 Damage","+16/18/20/22/24 Intelligence"],
+        "abilities": {
+            "Energy Burst": {
+                "description": "Burst of damage to target enemy unit. Upgradable.",
+                "Ability Type": "Target Unit",
+                "Affects": "Enemies",
+                "Damage": "Magical",
+                "Cooldown": "35/30/25/20/15",
+                "Mana": "180/160/140/120/100",
+                "Burst damage": "400/500/600/700/800",
+                "Range": "600/650/700/750/800"
+            }
+        },
+        "position": "0 -1140px"
+    },
+    "Demon Edge": {
+        "Cost": "2400",
+        "Bonus": ["+46 Damage"],
+        "position": "0 -1178px"
+    },
+    "Desolator": {
+        "Cost": "4100(900)",
+        "Bonus": ["+60 Damage"],
+        "abilities": {
+            "Corruption": {
+                "description": "Your attacks reduce target's armor. Desolator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Affects": "Enemy units and structures",
+                "Armor Reduction": 7,
+                "Duration": 15
+            }
+        },
+        "position": "0 -1216px"
+    },
+    "Diffusal Blade": {
+        "Cost": "3300(850)",
+        "Bonus": ["+22/26 Agility","+6/10 Intelligence"],
+        "abilities": {
+            "Purge": {
+                "description": "Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.",
+                "Ability Type": "Target Unit",
+                "Affects": "Units",
+                "Range": 600,
+                "Slow Duration": 4,
+                "Cooldown": 8
+            },
+            "Feedback": {
+                "description": "Your attacks burn 20 mana (36 mana when upgraded) and deal the same amount in damage. Upgradable. Diffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Damage": "Physical"
+            }
+        },
+        "position": "0 -1254px"
+    },
+    "Divine Rapier": {
+        "Cost": "6200",
+        "Bonus": ["+300 Damage"],
+        "position": "0 -3268px"
+    },
+    "Drum of Endurance": {
+        "Cost": "1775(800)",
+        "Bonus": ["+9 Strength","+9 Agility","+9 Intelligence","+3 Damage"],
+        "abilities": {
+            "Endurance": {
+                "description": "Gives bonus +10 attack speed and +10% movement speed to surrounding allies.",
+                "Ability Type": "No Target",
+                "Affects": "Allied Heroes",
+                "Radius": 900,
+                "Duration": 6,
+                "Cooldown": 30
+            },
+            "Swiftness Aura": {
+                "description": "Gives bonus attack and movement speed to surrounding allies.",
+                "Ability Type": "Aura",
+                "Affects": "Allies",
+                "Radius": 900,
+                "Bonus Attack Speed": 5,
+                "Bonus Movement Speed": "5&#37;"
+            }
+        },
+        "position": "0 -76px"
     },
     "Dust of Appearance": {
         "Cost": "180",
@@ -371,7 +504,6 @@
 "Gauntlets of Strength": {},
 "Slippers of Agility": {},
 "Mantle of Intelligence": {},
-"Circlet": {},
 "Robe of the Magi": {},
 "Ultimate Orb": {},
 "Ogre Club": {},
@@ -379,10 +511,8 @@
 "Ring of Protection": {},
 "Quelling Blade": {},
 "Stout Shield": {},
-"Chainmail": {},
 "Quarterstaff": {},
 "Helm of Iron Will": {},
-"Claymore": {},
 "Platemail": {},
 "Javelin": {},
 "Mithril Hammer": {},
@@ -390,7 +520,6 @@
 "Sage&#39;s Mask": {},
 "Ring of Regen": {},
 "Gloves of Haste": {},
-"Cloack": {},
 "Gem of True Sight": {},
 "Morbid Mask": {},
 "Ghost Scepter": {},
@@ -413,7 +542,6 @@
 "Ring of Aquila": {},
 "Medallion of Courage": {},
 "Arcane Boots": {},
-"Drum of Endurance": {},
 "Vladimir&#39;s Offering": {},
 "Mekansm": {},
 "Pipe of Insight": {},
@@ -421,21 +549,17 @@
 "Veil of Discord": {},
 "Eul&#39;s Scepter of Divinity": {},
 "Necronomicon": {},
-"Dagon": {},
 "Rod of Atos": {},
 "Orchid Malevolence": {},
 "Aghanim&#39;s Scepter": {},
 "Refresher Orb": {},
 "Scythe of Vyse": {},
-"Crystalys": {},
 "Armlet of Mordiggian": {},
 "Skull Basher": {},
 "Shadow Blade": {},
 "Ethereal Blade": {},
 "Radiance": {},
 "Monkey King Bar": {},
-"Daedalus": {},
-"Divine Rapier": {},
 "Hood of Defiance": {},
 "Vanguard": {},
 "Soul Booster": {},
@@ -448,10 +572,8 @@
 "Sange": {},
 "Yasha": {},
 "Maelstrom": {},
-"Diffusal Blade": {},
 "Heaven&#39;s Halberd": {},
 "Sange and Yasha": {},
-"Desolator": {},
 "Mjollnir": {},
 "Eye of Skadi": {},
 "Satanic": {},
@@ -462,7 +584,6 @@
 "Vitality Booster": {},
 "Point Booster": {},
 "Hyperstone": {},
-"Demon Edge": {},
 "Mystic Staff": {},
 "Reaver": {},
 "Eaglesong": {},
