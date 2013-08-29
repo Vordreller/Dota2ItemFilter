@@ -97,13 +97,15 @@ $(document).ready(function() {
                 }
             });
 
-            //Now checked if further combinations are possible.
+            //Now check if further combinations are possible.
             //Values for which this is not possible should have their checkboxes disabled.
             var visibleItems = $('figure:not(.hidden)');
 
+            //Go over all the unchecked checkboxes
             $.each(unchecked, function(index, pureHtml) {
                 var comboPossible = false;
 
+                //Check each visible item and see if a combination is possible, based on its classes
                 $.each(visibleItems, function() {
                     var classes = $(this).children('img').attr('class').split(' ');
 
@@ -112,6 +114,7 @@ $(document).ready(function() {
                     }
                 });
 
+                //Disable if needed
                 if (!comboPossible) {
                     $(this).attr('disabled', true);
                 } else {
@@ -126,9 +129,9 @@ $(document).ready(function() {
     });
 
 
+    //Get the info on the item that was clicked on
     $("figure").on('click', function(eventObject) {
-        var currentItem = getItemInfo(this.id);
-        
+        getItemInfo(this.id);
     });
 
     var getItemInfo = function(itemName) {
@@ -140,10 +143,36 @@ $(document).ready(function() {
         }).fail(function() { alert("error"); });
         
         jqxhr.done(function(data) {
-            console.log(data);
+            formatData(data);            
         });
     };
 
+    var formatData = function(data) {
+        console.log(traverse(data));
+    }
+
+    var itemPosition = "";
+    //Recursive function is the best way to go.
+    //Credit: http://stackoverflow.com/a/722732/
+    //Also: http://www.youtube.com/watch?v=GxqgcXmbVgs
+    function traverse(object) {
+        var itemDetails = "";
+        for (var item in object) {
+            //Get the background-position and do not add to the actual HTML
+            if(item=="position"){
+                itemPosition = item;
+                continue;
+            }
+            if (typeof(object[item])=="object") {
+                //going on step down in the object tree!!
+                itemDetails += "<li>" + item + " : " + traverse(object[item]);
+                
+            } else {
+                itemDetails += "<li>" + item + " : " + object[item] + "</li>";
+            }
+        }
+        return itemDetails;
+    }
 
     /**
      * End logic section

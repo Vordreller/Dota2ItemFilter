@@ -1,10 +1,10 @@
 {
     "Abyssal Blade": {
         "Cost": "6750",
-        "Bonus": ["+10 Strength","+100 Damage"],
-        "abilities": {
+        "Bonus": {"Strength":"+10","Damage":"+100"},
+        "Abilities": {
             "Overwhelm": {
-                "description": "Stun a target enemy unit for 2 seconds. Goes through Magic Immunity.",
+                "Description": "Stun a target enemy unit for 2 seconds. Goes through Magic Immunity.",
                 "Radius": 140,
                 "Cooldown": 60,
                 "Mana Cost": 150,
@@ -12,7 +12,7 @@
                 "Affects": "Enemies"
             },
             "Bash": {
-                "description": "Gives a chance to stun for 1.4 seconds.",
+                "Description": "Gives a chance to stun for 1.4 seconds.",
                 "Bash Chance for Melee Heroes": "25&#37;",
                 "Bash Chance for Ranged Heroes": "10&#37;",
                 "Cooldown": 2,
@@ -21,41 +21,41 @@
             }
         },
         "Extra Info": "Cannot be purchased by Slardar, Faceless Void, Troll Warlord, Spirit Breaker. Does not stack with other bash.",
-        "position": "0 -38px"
+        "background-position": "0 -38px"
     },
-    "Aghanim&#39;s Scepter": {
+    "Aghanim's Scepter": {
         "Cost": "4200",
-        "Bonus": ["+10 Strength","+10 Agility", "+10 Intelligence", "+200 HP", "+150 Mana"],        
+        "Bonus": {"Strength":"+10","Agility":"+10", "Intelligence":"+10", "HP":"+200", "Mana":"+150"},        
         "Description": "The scepter of a wizard with demigod-like powers.",
-        "abilities": {
+        "Abilities": {
             "Ultimate Upgrade": {
-                "description": "Upgrades the ultimates of certain heroes.",
+                "Description": "Upgrades the ultimates of certain heroes.",
                 "Ability Type": "Passive"
             }
         },
-        "position": "0 -4484px"
+        "background-position": "0 -4484px"
     },
     "Animal Courier": {
         "Cost": "150",
-        "abilities": {
+        "Abilities": {
             "Summon Animal Courier": {
-                "description": "Summons an Animal Courier to carry items for you. The Animal Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The courier is invulnerable when near the friendly Fountain. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Courier."
+                "Description": "Summons an Animal Courier to carry items for you. The Animal Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The courier is invulnerable when near the friendly Fountain. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Courier."
             }
         },
-        "position": "0 -1064px"
+        "background-position": "0 -1064px"
     },
     "Arcane Boots": {
         "Cost": "1450(1000)",
-        "Bonus": ["+250 Mana","+60 Movement Speed"],
-        "abilities": {
+        "Bonus": {"Mana":"+250","Movement speed":"+60"},
+        "Abilities": {
             "Replenish Mana": {
-                "description": "Restores mana in an area around the hero.",
-                "Mana Restored": 135,
+                "Description": "Restores mana in an area around the hero.",
+                "Ability Type": "No target",
+                "Affects": "Allies",
+                "Mana restored": 135,
                 "Radius": 600,
                 "Cooldown": 55,
-                "Mana Cost": 25,
-                "Ability Type": "No Target",
-                "Affects": "Allies"
+                "Mana": 25
             }
         },
         "Extra Info": "Does not work on Meepo clones.",
@@ -63,23 +63,23 @@
     },
     "Armlet of Mordiggian": {
         "Cost": "2600",
-        "Bonus": ["+7 HP regeneration","+9 Damage","+5 Armor","+15 Attack speed"],
-        "abilities": {
+        "Bonus": {"HP regeneration":"+7","Damage":"+9","Armor":"+5","Attack speed":"+15"},
+        "Abilities": {
             "Unholy Strength": {
-                "description": "Gives +31 damage, +10 attack speed, and +25 strength while active, but drains 40 HP per second. You cannot die from the health loss when the bonus strength is gone, or the health drain per second.",
+                "Description": "Gives +31 damage, +10 attack speed, and +25 strength while active, but drains 40 HP per second. You cannot die from the health loss when the bonus strength is gone, or the health drain per second.",
                 "Cooldown": 2,
                 "Ability Type": "Toggle",
                 "Affects": "Self"
             }
         },
-        "position": "0 -152px"
+        "background-position": "0 -152px"
     },
     "Assault Cuirass": {
         "Cost": "5350(1300)",
-        "Bonus": ["+10 Armor","+35 Attack speed"],
-        "abilities": {
+        "Bonus": {"Armor":"+10","Attack speed":"+35"},
+        "Abilities": {
             "Assault Aura": {
-                "description": "Grants attack speed and armor to nearby allied units, and decreases armor for nearby enemies. Multiple instances of Assault Aura do not stack.",
+                "Description": "Grants attack speed and armor to nearby allied units, and decreases armor for nearby enemies. Multiple instances of Assault Aura do not stack.",
                 "Radius": 900,
                 "Bonus Attack Speed": 20,
                 "Bonus Armor": 5,
@@ -88,37 +88,37 @@
                 "Affects": "Units"
             }
         },
-        "position": "0 -190px"
+        "background-position": "0 -190px"
     },
     "Band of Elvenskin": {
         "Cost": "450",
-        "Bonus": ["+6 Agility"],
-        "position": "0 -608px"
+        "Bonus": {"Agility":"+6"},
+        "background-position": "0 -608px"
     },
     "Battle Fury": {
         "Cost": "4350",
-        "Bonus": ["+6 HP regeneration","+150&#37; Mana regeneration","+65 Damage"],
-        "abilities": {
+        "Bonus": {"HP regeneration":"+6","Mana regeneration":"+150&#37;","Damage":"+65"},
+        "Abilities": {
             "Cleave": {
-                "description": "Deals a percent of attack damage in a 225 radius around the target. Does not work on ranged heroes. Cleave damage on non-primary targets is not reduced by armor values.",
+                "Description": "Deals a percent of attack damage in a 225 radius around the target. Does not work on ranged heroes. Cleave damage on non-primary targets is not reduced by armor values.",
                 "Cleave Damage": "35&#37;",
                 "Ability Type": "Passive",
                 "Affects": "Enemies"
             }
         },
-        "position": "0 -304px"
+        "background-position": "0 -304px"
     },
     "Belt of Strength": {
         "Cost": "450",
-        "Bonus": ["+6 Strength"],
-        "position": "0 -266px"
+        "Bonus": {"Strength":"+6"},
+        "background-position": "0 -266px"
     },
     "Black King Bar": {
         "Cost": "3900(1300)",
-        "Bonus": ["+10 Strength","+24 Damage"],
-        "abilities": {
+        "Bonus": {"Strength":"+10","Damage":"+24"},
+        "Abilities": {
             "Avatar": {
-                "description": "Grants magic immunity. Duration and cooldown decrease with each use. Some Ultimate abilities are able to disable through Black King Bar.",
+                "Description": "Grants magic immunity. Duration and cooldown decrease with each use. Some Ultimate Abilities are able to disable through Black King Bar.",
                 "Duration": "10/9/8/7/6/5/4",
                 "Cooldown": "80/75/70/65/60/55/50",
                 "Ability Type": "No target",
@@ -126,14 +126,14 @@
             }
         },
         "Extra Info": "Can not be sold.",
-        "position": "0 -342px"
+        "background-position": "0 -342px"
     },
     "Blade Mail": {
         "Cost": "2200",
-        "Bonus": ["+10 Intelligence","+22 Damage","+6 Armor"],
-        "abilities": {
+        "Bonus": {"Intelligence":"+10","Damage":"+22","Armor":"+6"},
+        "Abilities": {
             "Damage Return": {
-                "description": "Returns any damage you take to the unit that dealt the damage.",
+                "Description": "Returns any damage you take to the unit that dealt the damage.",
                 "Duration": 4.5,
                 "Cooldown": 17,
                 "Mana": 25,
@@ -142,23 +142,23 @@
             }
         },
         "Extra Info": "Deals pure damage. Does not reflect damage from other blademails. The returned damage is based on the damage you received after armor or magic reduction.",
-        "position": "0 -418px"
+        "background-position": "0 -418px"
     },
     "Blade of Alacrity": {
         "Cost": "1000",
-        "Bonus": ["+10 Agility"],
-        "position": "0 -456px"
+        "Bonus": {"Agility":"+10"},
+        "background-position": "0 -456px"
     },
     "Blades of Attack": {
         "Cost": "450",
-        "Bonus": ["+9 Damage"],
-        "position": "0 -380px"
+        "Bonus": {"Damage":"+9"},
+        "background-position": "0 -380px"
     },
     "Blink Dagger": {
         "Cost": "2150",
-        "abilities": {
+        "Abilities": {
             "Blink": {
-                "description": "Teleport to a target point up to 1200 units away. If damage is taken from an enemy hero, Blink Dagger cannot be used for 3 seconds.",
+                "Description": "Teleport to a target point up to 1200 units away. If damage is taken from an enemy hero, Blink Dagger cannot be used for 3 seconds.",
                 "Cooldown": 12,
                 "Mana": 75,
                 "Ability Type": "Target point",
@@ -166,39 +166,39 @@
             }
         },
         "Extra Info": "Can not be bought by Pudge and Vengeful Spirit. Selecting a point outside the maximum range will actually land you at 960 units instead of 1200.",
-        "position": "0 -494px"
+        "background-position": "0 -494px"
     },
     "Bloodstone": {
         "Cost": "5050",
-        "Bonus": ["+500 HP","+400 Mana","+9 HP regeneration","+200&#37; Mana regeneration"],
-        "abilities": {
+        "Bonus": {"HP":"+500","Mana":"+400","HP regeneration":"+9","Mana regeneration":"+200&#37;"},
+        "Abilities": {
             "Pocket Suicide": {
-                "description": "Instantly commits suicide.",
+                "Description": "Instantly commits suicide.",
                 "Range": 100,
                 "Cooldown": 300,
                 "Ability Type": "Target Point",
                 "Affects": "Self"
             },
             "Bloodpact": {
-                "description": "Starts with 8 charges. Gains 1 charge each time an enemy hero dies within 1675 range. Each charge bestows 1 mana regeneration per second, reduces gold lost from death by 25, and reduces respawn time by 4 seconds. When the bearer dies, restores 400 HP + 30 HP per charge to allied units within 1675 range, then loses a third of its charges. While dead, the bearer continues to receive experience at the death location and gives 1800 unit vision there.",
+                "Description": "Starts with 8 charges. Gains 1 charge each time an enemy hero dies within 1675 range. Each charge bestows 1 mana regeneration per second, reduces gold lost from death by 25, and reduces respawn time by 4 seconds. When the bearer dies, restores 400 HP + 30 HP per charge to allied units within 1675 range, then loses a third of its charges. While dead, the bearer continues to receive experience at the death location and gives 1800 unit vision there.",
                 "Ability Type": "Passive",
                 "Affects": "Self"
             }
         },
         "Extra Info": "Amount of charges lost is rounded up. Range of experience gained while dead is 1000.",
-        "position": "0 -532px"
+        "background-position": "0 -532px"
     },
     "Boots of Speed": {
         "Cost": "450",
-        "Bonus": ["+50 Movement speed"],
-        "position": "0 -570px"
+        "Bonus": {"Movement speed":"+50"},
+        "background-position": "0 -570px"
     },
     "Boots of Travel": {
         "Cost": "2450(2000)",
-        "Bonus": ["+100 Movement speed"],
-        "abilities": {
+        "Bonus": {"Movement speed":"+100"},
+        "Abilities": {
             "Teleport": {
-                "description": "Teleports you to an allied non-hero unit or structure. While channeling, gives 200 range vision on the target and pings your allies&#39; minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
+                "Description": "Teleports you to an allied non-hero unit or structure. While channeling, gives 200 range vision on the target and pings your allies' minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
                 "Range": "Global",
                 "Casting time": 3,
                 "Cooldown": 60,
@@ -208,13 +208,13 @@
             }
         },
         "Extra Info": "Will automatically target your Fountain if double clicked. Shares cooldown with Town Portal Scroll.",
-        "position": "0 -4408px"
+        "background-position": "0 -4408px"
     },
     "Bottle": {
         "Cost": "600",
-        "abilities": {
+        "Abilities": {
             "Regenerate": {
-                "description": "Restores HP and Mana over time. Effect is lost if unit is attacked. Empty Bottle refills near town fountain. You can also store runes in the bottle, to save for later use. After 2 minutes, stored Runes will be activated.",
+                "Description": "Restores HP and Mana over time. Effect is lost if unit is attacked. Empty Bottle refills near town fountain. You can also store runes in the bottle, to save for later use. After 2 minutes, stored Runes will be activated.",
                 "Ability Type": "No Target",
                 "Affects": "Self",
                 "Health Restored": 135,
@@ -223,23 +223,23 @@
                 "Cooldown": 0.5
             }
         },
-        "position": "0 -646px"
+        "background-position": "0 -646px"
     },
     "Bracer": {
         "Cost": "525(190)",
-        "Bonus": ["+6 Strength","+3 Agility","+3 Intelligence","+3 Damage"],
-        "position": "0 -684px"
+        "Bonus": {"Strength":"+6","Agility":"+3","Intelligence":"+3","Damage":"+3"},
+        "background-position": "0 -684px"
     },
     "Broadsword": {
         "Cost": "1200",
-        "Bonus": ["+18 Damage"],
-        "position": "0 -760px"
+        "Bonus": {"Damage":"+18"},
+        "background-position": "0 -760px"
     },
     "Buckler": {
         "Cost": "803(200)",
-        "abilities": {
+        "Abilities": {
             "Armor Bonus": {
-                "description": "Gives +2 armor to all nearby allied units. Lasts 25 seconds on heroes, 30 seconds on units.",
+                "Description": "Gives +2 armor to all nearby allied units. Lasts 25 seconds on heroes, 30 seconds on units.",
                 "Ability Type": "No Target",
                 "Affects": "Allies",
                 "Radius": 750,
@@ -247,80 +247,80 @@
                 "Cooldown": 25
             }
         },
-        "position": "0 -798px"
+        "background-position": "0 -798px"
     },
     "Butterfly": {
         "Cost": "6000",
-        "Bonus": ["+30 Agility","+30 Damage","+35&#37; Evasion","+30 Attack speed"],
-        "position": "0 -836px"
+        "Bonus": {"Agility":"+30","Damage":"+30","Evasion":"+35&#37;","Attack speed":"+30"},
+        "background-position": "0 -836px"
     },
     "Chainmail": {
         "Cost": "550",
-        "Bonus": ["+5 Armor"],
-        "position": "0 -874px"
+        "Bonus": {"Armor":"+5"},
+        "background-position": "0 -874px"
     },
     "Circlet": {
         "Cost": "185",
-        "Bonus": ["+2 Strength","+2 Agility","+2 Intelligence"],
-        "position": "0 -912px"
+        "Bonus": {"Strength":"+2","Agility":"+2","Intelligence":"+2"},
+        "background-position": "0 -912px"
     },
     "Clarity": {
         "Cost": "50",
-        "abilities": {
+        "Abilities": {
             "Regenerate Mana": {
-                "description": "Restores Mana over time. If the user is attacked, the effect is lost.",
+                "Description": "Restores Mana over time. If the user is attacked, the effect is lost.",
                 "Duration": 30,
                 "Mana restored": 100,
                 "Ability Type": "Target Unit",
                 "Affects": "Allies and self"
             }
         },
-        "position": "0 -950px"
+        "background-position": "0 -950px"
     },
     "Claymore": {
         "Cost": "1400",
-        "Bonus": ["+21 Damage"],
-        "position": "0 -988px"
+        "Bonus": {"Damage":"+21"},
+        "background-position": "0 -988px"
     },
     "Cloack": {
         "Cost": "550",
-        "Bonus": ["+15&#37;Magic resistance"],
-        "position": "0 -1026px"
+        "Bonus": {"Magic resistance":"+15&#37;"},
+        "background-position": "0 -1026px"
     },
     "Crystalys": {
         "Cost": "2150",
-        "Bonus": ["+30 Damage"],
-        "abilities": {
+        "Bonus": {"Damage":"+30"},
+        "Abilities": {
             "Critical Strike": {
-                "description": "Grants a chance to deal critical damage on an attack.",
+                "Description": "Grants a chance to deal critical damage on an attack.",
                 "Ability Type": "Passive",
                 "Affects": "Enemies",
                 "Critical Chance": "20&#37;",
                 "Critical Damage": "175&#37;"
             }
         },
-        "position": "0 -2128px"
+        "background-position": "0 -2128px"
     },
     "Daedalus": {
         "Cost": "5550(1000)",
-        "Bonus": ["+81 Damage"],
-        "abilities": {
+        "Bonus": {"Damage":"+81"},
+        "Abilities": {
             "Critical Strike": {
-                "description": "Grants a chance to deal critical damage on an attack.",
+                "Description": "Grants a chance to deal critical damage on an attack.",
                 "Ability Type": "Passive",
                 "Affects": "Enemies",
                 "Critical Chance": "25&#37;",
                 "Critical Damage": "240&#37;"
             }
         },
-        "position": "0 -1710px"
+        "background-position": "0 -1710px"
     },
     "Dagon": {
         "Cost": "2730(1250)",
-        "Bonus": ["+3 Strength","+3 Agility","+9 Damage","+16/18/20/22/24 Intelligence"],
-        "abilities": {
+        "Bonus": {"Strength":"+3","Agility":"+3","Damage":"+9","Intelligence":"+16/18/20/22/24"},
+        "Abilities": {
             "Energy Burst": {
-                "description": "Burst of damage to target enemy unit. Upgradable.",
+                "Description": "Burst of damage to target enemy unit. Upgradable.",
                 "Ability Type": "Target Unit",
                 "Affects": "Enemies",
                 "Damage": "Magical",
@@ -330,33 +330,33 @@
                 "Range": "600/650/700/750/800"
             }
         },
-        "position": "0 -1140px"
+        "background-position": "0 -1140px"
     },
     "Demon Edge": {
         "Cost": "2400",
-        "Bonus": ["+46 Damage"],
-        "position": "0 -1178px"
+        "Bonus": {"Damage":"+46"},
+        "background-position": "0 -1178px"
     },
     "Desolator": {
         "Cost": "4100(900)",
-        "Bonus": ["+60 Damage"],
-        "abilities": {
+        "Bonus": {"Damage":"+60"},
+        "Abilities": {
             "Corruption": {
-                "description": "Your attacks reduce target's armor. Desolator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Description": "Your attacks reduce target's armor. Desolator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
                 "Ability Type": "Passive",
                 "Affects": "Enemy units and structures",
                 "Armor Reduction": 7,
                 "Duration": 15
             }
         },
-        "position": "0 -1216px"
+        "background-position": "0 -1216px"
     },
     "Diffusal Blade": {
         "Cost": "3300(850)",
-        "Bonus": ["+22/26 Agility","+6/10 Intelligence"],
-        "abilities": {
+        "Bonus": {"Agility":"+22/26","Intelligence":"+6/10"},
+        "Abilities": {
             "Purge": {
-                "description": "Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.",
+                "Description": "Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.",
                 "Ability Type": "Target Unit",
                 "Affects": "Units",
                 "Range": 600,
@@ -364,25 +364,25 @@
                 "Cooldown": 8
             },
             "Feedback": {
-                "description": "Your attacks burn 20 mana (36 mana when upgraded) and deal the same amount in damage. Upgradable. Diffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Description": "Your attacks burn 20 mana (36 mana when upgraded) and deal the same amount in damage. Upgradable. Diffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
                 "Ability Type": "Passive",
                 "Affects": "Enemies",
                 "Damage": "Physical"
             }
         },
-        "position": "0 -1254px"
+        "background-position": "0 -1254px"
     },
     "Divine Rapier": {
         "Cost": "6200",
-        "Bonus": ["+300 Damage"],
-        "position": "0 -3268px"
+        "Bonus": {"Damage":"+300"},
+        "background-position": "0 -3268px"
     },
     "Drum of Endurance": {
         "Cost": "1775(800)",
-        "Bonus": ["+9 Strength","+9 Agility","+9 Intelligence","+3 Damage"],
-        "abilities": {
+        "Bonus": {"Strength":"+9","Agility":"+9","Intelligence":"+9","Damage":"+3"},
+        "Abilities": {
             "Endurance": {
-                "description": "Gives bonus +10 attack speed and +10% movement speed to surrounding allies.",
+                "Description": "Gives bonus +10 attack speed and +10% movement speed to surrounding allies.",
                 "Ability Type": "No Target",
                 "Affects": "Allied Heroes",
                 "Radius": 900,
@@ -390,7 +390,7 @@
                 "Cooldown": 30
             },
             "Swiftness Aura": {
-                "description": "Gives bonus attack and movement speed to surrounding allies.",
+                "Description": "Gives bonus attack and movement speed to surrounding allies.",
                 "Ability Type": "Aura",
                 "Affects": "Allies",
                 "Radius": 900,
@@ -398,13 +398,13 @@
                 "Bonus Movement Speed": "5&#37;"
             }
         },
-        "position": "0 -76px"
+        "background-position": "0 -76px"
     },
     "Dust of Appearance": {
         "Cost": "180",
-        "abilities": {
+        "Abilities": {
             "Reveal": {
-                "description": "Reveals invisible Heroes in a nearby area.",
+                "Description": "Reveals invisible Heroes in a nearby area.",
                 "Duration": 12,
                 "Radius": 1050,
                 "Ability Type": "No Target",
@@ -413,55 +413,260 @@
                 "Cooldown": 60
             }
         },
-        "position": "0 -1292px"
+        "background-position": "0 -1292px"
+    },
+    "Eaglesong": {
+        "Cost": "3300",
+        "Bonus": {"Agility":"+25"},
+        "background-position": "0 -1330px"
+    },
+    "Energy Booster": {
+        "Cost": "1000",
+        "Bonus": {"Mana":"+250"},
+        "background-position": "0 -1368px"
+    },
+    "Ethereal Blade": {
+        "Cost": "4900",
+        "Bonus": {"Strength":"+10","Agility":"+40","Intelligence":"+10"},
+        "Abilities": {
+            "Ether Blast": {
+                "Description": "Converts you and your target into ethereal form. Target unit is slowed and cannot attack or be attacked, and takes 2× your primary attribute +75 as damage.",
+                "Ability Type": "Target Unit",
+                "Damage Type": "Magical",
+                "Affects": "Enemy units and structures",
+                "Movement Speed Slow": "80&#37;",
+                "Range": 800,
+                "Duration": 3,
+                "Self/Ally Duration": 4,
+                "Mana": 150,
+                "Cooldown": 30
+            }
+        },
+        "background-position": "0 -1406px"
+    },
+    "Eul's Scepter of Divinity": {
+        "Cost": "2700(500)",
+        "Bonus": {"Intelligence":"+10","Mana regeneration":"+150&#37;","Movement speed":"+35"},
+        "Abilities": {
+            "Cyclone": {
+                "Description": "Target unit is swept up in a cyclone for 2.5 seconds, and is invulnerable.",
+                "Ability Type": "Target Unit",
+                "Affects": "Units",
+                "Range": 700,
+                "Mana": 75,
+                "Cooldown": 30
+            }
+        },
+        "background-position": "0 -1102px"
+    },
+    "Eye of Skadi": {
+        "Cost": "5675",
+        "Bonus": {"Strength":"+25","Agility":"+25","Intelligence":"+25","HP":"+250","Mana":"+250"},
+        "Abilities": {
+            "Cold Attack": {
+                "Description": "Attacks slow the movement and attack speed of the target. Eye of Skadi is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers. Eye of Skadi can be combined with a lifesteal Unique Attack Modifier.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Movement Speed Slow": "30&#37;",
+                "Attack Speed Slow": "20&#37;",
+                "Duration (melee wielder)": 5,
+                "Duration (ranged wielder)": 3 
+            }
+        },
+        "background-position": "0 -3914px"
     },
     "Flying Courier": {
         "Cost": "220(150)",
-        "abilities": {
+        "Abilities": {
             "Summon Flying Courier": {
-                "description": "Summons a Flying Courier to carry items for you. The Flying Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The Flying Courier is invulnerable when near the friendly Fountain and will instantly die if it is too close to the enemy fountain area. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Flying Courier."
+                "Description": "Summons a Flying Courier to carry items for you. The Flying Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The Flying Courier is invulnerable when near the friendly Fountain and will instantly die if it is too close to the enemy fountain area. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Flying Courier."
             }
         },
-        "position": "0 -1482px"
+        "background-position": "0 -1482px"
+    },
+    "Force Staff": {
+        "Cost": "2250(900)",
+        "Bonus": {"Intelligence":"+10","HP regeneration":"+3"},
+        "Abilities": {
+            "Force": {
+                "Description": "Pushes any target unit 600 units in the direction it is facing. Double click to self-cast.",
+                "Ability Type": "Target Unit",
+                "Affects": "Units",
+                "Range": 800,
+                "Cooldown": 20,
+                "Mana": 25
+            }
+        },
+        "background-position": "0 -1520px"
+    },
+    "Gauntlets of Strength": {
+        "Cost": "150",
+        "Bonus": {"Strength":"+3"},
+        "background-position": "0 -1558px"
+    },
+    "Gem of True Sight": {
+        "Cost": "850",
+        "Abilities": {
+            "True Sight": {
+                "Description": "Gives the ability to see invisible units and wards. Drops on death.",
+                "Radius": 1100
+            }
+        },
+        "background-position": "0 -1596px"
+    },
+    "Ghost Scepter": {
+        "Cost": "1600",
+        "Bonus": {"Strength":"+7","Agility":"+7","Intelligence":"+7"},
+        "Abilities": {
+            "Ghost Form": {
+                "Description": "Enter ghost form, unable to attack or be attacked, but take 40% extra damage from spells. Using a Teleport Scroll dispels Ghost Form. Boots of Travel do not dispel Ghost Form.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Cooldown": 30
+            }
+        },
+        "background-position": "0 -1634px"
+    },
+    "Gloves of Haste": {
+        "Cost": "500",
+        "Bonus": {"Attack speed":"+15"},
+        "background-position": "0 -1672px"
+    },
+    "Hand of Midas": {
+        "Cost": "1900(1400)",
+        "Bonus": {"Attack speed":"+30"},
+        "Abilities": {
+            "Transmute": {
+                "Description": "Kills a non-hero target for 190 gold and 2.5× experience. Cannot be used on Ancients.",
+                "Ability Type": "Target Unit",
+                "Affects": "Units",
+                "Cooldown": 100
+            }
+        },
+        "background-position": "0 -1748px"
+    },
+    "Headdress": {
+        "Cost": "603(200)",
+        "Bonus": {"Strength":"+2","Agility":"+2","Intelligence":"+2"},
+        "Abilities": {
+            "Regeneration Aura": {
+                "Description": "Restores HP to allies in a 750 unit radius. Multiple instances of Regeneration Aura do not stack. ",
+                "Ability Type": "Passive",
+                "Affects": "Allies",
+                "Bonus Health Regeneration": 3
+            }
+        },
+        "background-position": "0 -1786px"
     },
     "Healing Salves": {
         "Cost": "100",
-        "abilities": {
+        "Abilities": {
             "Regenerate Health": {
-                "description": "Restores HP over time. If the user is attacked, the effect is lost.",
+                "Description": "Restores HP over time. If the user is attacked, the effect is lost.",
                 "Duration": 10,
                 "Health restored": 400,
                 "Ability Type": "Target Unit",
                 "Affects": "Allies"
             }
         },
-        "position": "0 -1444px"
+        "background-position": "0 -1444px"
+    },
+    "Heart of Tarrasque": {
+        "Cost": "5500(1200)",
+        "Bonus": {"Strength":"+40","HP":"+300"},
+        "Abilities": {
+            "Health Regeneration": {
+                "Description": "Restores a percentage of max health per second. This ability is disabled if damage is taken from an enemy Hero or Roshan within the last 4 seconds if your hero is melee or 6 seconds if your hero is ranged.",
+                "Ability Type": "Passive",
+                "Affects": "Self",
+                "Bonus Health Regeneration": "2&#37;"
+            }
+        },
+        "background-position": "0 -1824px"
+    },
+    "Heaven's Halberd": {
+        "Cost": "3050",
+        "Bonus": {"Strength":"+20","Damage":"+25","Evasion":"+25&#37;"},
+        "Abilities": {
+            "Disarm": {
+                "Description": "Disarms the target for 4.5 seconds. Lasts 3 on melee targets.",
+                "Ability Type": "Target Unit",
+                "Affects": "Enemies",
+                "Range": 600,
+                "Cooldown": 30,
+                "Mana": 100
+            },
+            "Lesser Maim": {
+                "Description": "Gives a chance on attack to slow for 4 seconds.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Maim Chance": "15&#37;",
+                "Movement Speed Slow": "20&#37;",
+                "Attack Speed Slow": "20&#37;"
+            }
+        },
+        "background-position": "0 -1862px"
+    },
+    "Helm of Iron Will": {
+        "Cost": "950",
+        "Bonus": {"HP regeneration":"+3","Armor":"+5"},
+        "background-position": "0 -1900px"
+    },
+    "Helm of the Dominator": {
+        "Cost": "1850",
+        "Bonus": {"Damage":"+20","Armor":"+5"},
+        "Abilities": {
+            "Dominate": {
+                "Description": "Take control of a non-hero, non-ancient target unit.",
+                "Ability Type": "Target Unit",
+                "Affects": "Units",
+                "Range": 700,
+                "Cooldown": 60,
+                "Mana": 75
+            },
+            "Lifesteal": {
+                "Description": "Gives lifesteal on attacks. Helm of the Dominator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Lifesteal": "15&#37;"
+            }
+        },
+        "background-position": "0 -1938px"
+    },
+    "Hood of Defiance": {
+        "Cost": "2125",
+        "Bonus": {"HP regeneration":"+8","Magic resistance":"+30&#37;"},
+        "background-position": "0 -1976px"
+    },
+    "Hyperstone": {
+        "Cost": "2100",
+        "Bonus": {"Attack speed":"+55"},
+        "background-position": "0 -2014px"
     },
     "Observer Ward": {
         "Cost": "150",
-        "abilities": {
+        "Abilities": {
             "Place Ward": {
-                "description": "Places an Observer Ward to give sight of the surrounding area. Lasts 6 minutes.",
+                "Description": "Places an Observer Ward to give sight of the surrounding area. Lasts 6 minutes.",
                 "Ability Type": "Target Point"
             }
         },
-        "position": "0 -4750px"
+        "background-position": "0 -4750px"
     },
     "Sentry Ward": {
         "Cost": "200",
-        "abilities": {
+        "Abilities": {
             "Place Ward": {
-                "description": "Places a Sentry Ward to give True Sight of the surrounding area. Lasts 3 minutes.",
+                "Description": "Places a Sentry Ward to give True Sight of the surrounding area. Lasts 3 minutes.",
                 "Ability Type": "Target Point"
             }
         },
-        "position": "0 -4788px"
+        "background-position": "0 -4788px"
     },
     "Smoke of Deceit": {
         "Cost": "100",
-        "abilities": {
+        "Abilities": {
             "Smoke of Deceit": {
-                "description": "Upon activation, the user and all nearby allied player-controlled units gain invisiblity and bonus movement speed for a brief time. Minimap icons will also be hidden. Upon moving within 1025 range of an enemy hero or tower, the invisibility and movement speed bonus is lost.",
+                "Description": "Upon activation, the user and all nearby allied player-controlled units gain invisiblity and bonus movement speed for a brief time. Minimap icons will also be hidden. Upon moving within 1025 range of an enemy hero or tower, the invisibility and movement speed bonus is lost.",
                 "Duration": 40,
                 "Bonus Movement Speed": "15&#37;",
                 "Radius": 1200,
@@ -470,26 +675,26 @@
                 "Affects": "Allied Heroes"
             }
         },
-        "position": "0 -3990px"
+        "background-position": "0 -3990px"
     },
     "Tango": {
         "Cost": "90",
-        "abilities": {
+        "Abilities": {
             "Eat Tree": {
-                "description": "Consume a tree to restore HP over time. Comes with 3 charges.",
+                "Description": "Consume a tree to restore HP over time. Comes with 3 charges.",
                 "Duration": 16,
                 "Health restored": 115,
                 "Ability Type": "Trees",
                 "Affects": "Self"
             }
         },
-        "position": "0 -4294px"
+        "background-position": "0 -4294px"
     },
     "Town Portal Scroll": {
         "Cost": "135",
-        "abilities": {
+        "Abilities": {
             "Teleport": {
-                "description": "Teleports you to within 525 range of a target friendly building. While channeling, gives 200 range vision on the target and pings your allies' minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
+                "Description": "Teleports you to within 525 range of a target friendly building. While channeling, gives 200 range vision on the target and pings your allies' minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
                 "Casting time": "3 (5/6/7/8 for 1/2/3/4 recent allied teleports)",
                 "Radius": "Global",
                 "Ability Type": "Channeled",
@@ -498,10 +703,9 @@
                 "Cooldown": 65
             }
         },
-        "position": "0 -4332px"
+        "background-position": "0 -4332px"
     },
 "Iron Branch": {},
-"Gauntlets of Strength": {},
 "Slippers of Agility": {},
 "Mantle of Intelligence": {},
 "Robe of the Magi": {},
@@ -512,80 +716,60 @@
 "Quelling Blade": {},
 "Stout Shield": {},
 "Quarterstaff": {},
-"Helm of Iron Will": {},
 "Platemail": {},
 "Javelin": {},
 "Mithril Hammer": {},
 "Magic Stick": {},
-"Sage&#39;s Mask": {},
+"Sage's Mask": {},
 "Ring of Regen": {},
-"Gloves of Haste": {},
-"Gem of True Sight": {},
 "Morbid Mask": {},
-"Ghost Scepter": {},
 "Shadow Amulet": {},
 "Talisman of Evasion": {},
 "Null Talisman": {},
 "Wraith Band": {},
 "Magic Wand": {},
-"Poor Man&#39;s Shield": {},
+"Poor Man's Shield": {},
 "Soul Ring": {},
 "Phase Boots": {},
 "Power Treads": {},
 "Oblivion Staff": {},
 "Perseverance": {},
-"Hand of Midas": {},
 "Ring of Basilius": {},
-"Headdress": {},
 "Urn of Shadows": {},
 "Tranquil Boots": {},
 "Ring of Aquila": {},
 "Medallion of Courage": {},
-"Arcane Boots": {},
-"Vladimir&#39;s Offering": {},
+"Vladimir's Offering": {},
 "Mekansm": {},
 "Pipe of Insight": {},
-"Force Staff": {},
 "Veil of Discord": {},
-"Eul&#39;s Scepter of Divinity": {},
 "Necronomicon": {},
 "Rod of Atos": {},
 "Orchid Malevolence": {},
-"Aghanim&#39;s Scepter": {},
 "Refresher Orb": {},
 "Scythe of Vyse": {},
-"Armlet of Mordiggian": {},
 "Skull Basher": {},
 "Shadow Blade": {},
-"Ethereal Blade": {},
 "Radiance": {},
 "Monkey King Bar": {},
-"Hood of Defiance": {},
 "Vanguard": {},
 "Soul Booster": {},
-"Shiva&#39;s Guard": {},
+"Shiva's Guard": {},
 "Manta Style": {},
-"Linken&#39;s Sphere": {},
-"Heart of Tarrasque": {},
-"Helm of the Dominator": {},
+"Linken's Sphere": {},
 "Mask of Madness": {},
 "Sange": {},
 "Yasha": {},
 "Maelstrom": {},
-"Heaven&#39;s Halberd": {},
 "Sange and Yasha": {},
 "Mjollnir": {},
-"Eye of Skadi": {},
 "Satanic": {},
 "Orb of Venom": {},
 "Ring of Health": {},
 "Void Stone": {},
-"Energy Booster": {},
 "Vitality Booster": {},
 "Point Booster": {},
-"Hyperstone": {},
 "Mystic Staff": {},
 "Reaver": {},
-"Eaglesong": {},
 "Sacred Relic": {}
 }

@@ -186,9 +186,9 @@
                         "Eaglesong" => "eaglesong agility",
                         "Sacred Relic" => "sacred_relic damage"
                         );
-                    
+
                     natsort($item_names);
-                    
+
                     foreach($item_names as $name => $class){
                         $result = "<figure class='item' id='$name'>
                             <img class='image $class' width='51' height='38' />
@@ -197,11 +197,11 @@
                             </figcaption>
                         </figure>";
                         echo $result;
-                    }   
+                    }
                     ?>
                 </div>
                 <div id='detail'>
-                    
+                    <ul></ul>
                 </div>
             </div>
         </div>
