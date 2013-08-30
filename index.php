@@ -200,8 +200,7 @@
                     }
                     ?>
                 </div>
-                <div id='detail'>
-                    <ul></ul>
+                <div id='details'>
                 </div>
             </div>
         </div>

@@ -44,6 +44,13 @@ $(document).ready(function() {
 
     };
 
+    //Set the width of the details panel.
+    var detailsWidth = function() {
+        $("#details").css('width',($('body').innerWidth() - ($("#left").width() + $("#items").width())) + 'px');
+    }
+
+    detailsWidth();
+
     /**
      * End view section
      */
@@ -128,9 +135,11 @@ $(document).ready(function() {
         setDisabledColor();
     });
 
+    var currentFigure = "";
 
     //Get the info on the item that was clicked on
     $("figure").on('click', function(eventObject) {
+        currentFigure = this;
         getItemInfo(this.id);
     });
 
@@ -143,12 +152,15 @@ $(document).ready(function() {
         }).fail(function() { alert("error"); });
         
         jqxhr.done(function(data) {
-            formatData(data);            
+            formatData(data);
         });
     };
 
+    //This function called once the asynchronous ajax call is done. Should be safe.
     var formatData = function(data) {
-        console.log(traverse(data));
+        var itemData = traverse(data);
+        $("#details").html("<ul>"+itemData+"</ul>");
+        $(currentFigure).clone().addClass("solo").prependTo("#details");
     }
 
     var itemPosition = "";
@@ -157,15 +169,11 @@ $(document).ready(function() {
     //Also: http://www.youtube.com/watch?v=GxqgcXmbVgs
     function traverse(object) {
         var itemDetails = "";
+        //Get all info on the object
         for (var item in object) {
-            //Get the background-position and do not add to the actual HTML
-            if(item=="position"){
-                itemPosition = item;
-                continue;
-            }
             if (typeof(object[item])=="object") {
                 //going on step down in the object tree!!
-                itemDetails += "<li>" + item + " : " + traverse(object[item]);
+                itemDetails += "<li>" + item + " : <ul>" + traverse(object[item]) + "</ul></li>";
                 
             } else {
                 itemDetails += "<li>" + item + " : " + object[item] + "</li>";

@@ -20,8 +20,7 @@
                 "Affects": "Enemies"
             }
         },
-        "Extra Info": "Cannot be purchased by Slardar, Faceless Void, Troll Warlord, Spirit Breaker. Does not stack with other bash.",
-        "background-position": "0 -38px"
+        "Extra Info": "Cannot be purchased by Slardar, Faceless Void, Troll Warlord, Spirit Breaker. Does not stack with other bash."
     },
     "Aghanim's Scepter": {
         "Cost": "4200",
@@ -32,8 +31,7 @@
                 "Description": "Upgrades the ultimates of certain heroes.",
                 "Ability Type": "Passive"
             }
-        },
-        "background-position": "0 -4484px"
+        }
     },
     "Animal Courier": {
         "Cost": "150",
@@ -41,8 +39,7 @@
             "Summon Animal Courier": {
                 "Description": "Summons an Animal Courier to carry items for you. The Animal Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The courier is invulnerable when near the friendly Fountain. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Courier."
             }
-        },
-        "background-position": "0 -1064px"
+        }
     },
     "Arcane Boots": {
         "Cost": "1450(1000)",
@@ -58,8 +55,7 @@
                 "Mana": 25
             }
         },
-        "Extra Info": "Does not work on Meepo clones.",
-        "background-position": "0 -114px"
+        "Extra Info": "Does not work on Meepo clones."
     },
     "Armlet of Mordiggian": {
         "Cost": "2600",
@@ -71,8 +67,7 @@
                 "Ability Type": "Toggle",
                 "Affects": "Self"
             }
-        },
-        "background-position": "0 -152px"
+        }
     },
     "Assault Cuirass": {
         "Cost": "5350(1300)",
@@ -87,13 +82,11 @@
                 "Ability Type": "Aura",
                 "Affects": "Units"
             }
-        },
-        "background-position": "0 -190px"
+        }
     },
     "Band of Elvenskin": {
         "Cost": "450",
-        "Bonus": {"Agility":"+6"},
-        "background-position": "0 -608px"
+        "Bonus": {"Agility":"+6"}
     },
     "Battle Fury": {
         "Cost": "4350",
@@ -105,13 +98,11 @@
                 "Ability Type": "Passive",
                 "Affects": "Enemies"
             }
-        },
-        "background-position": "0 -304px"
+        }
     },
     "Belt of Strength": {
         "Cost": "450",
-        "Bonus": {"Strength":"+6"},
-        "background-position": "0 -266px"
+        "Bonus": {"Strength":"+6"}
     },
     "Black King Bar": {
         "Cost": "3900(1300)",
@@ -125,8 +116,7 @@
                 "Affects": "Self"
             }
         },
-        "Extra Info": "Can not be sold.",
-        "background-position": "0 -342px"
+        "Extra Info": "Can not be sold."
     },
     "Blade Mail": {
         "Cost": "2200",
@@ -141,18 +131,15 @@
                 "Affects": "Enemies"
             }
         },
-        "Extra Info": "Deals pure damage. Does not reflect damage from other blademails. The returned damage is based on the damage you received after armor or magic reduction.",
-        "background-position": "0 -418px"
+        "Extra Info": "Deals pure damage. Does not reflect damage from other blademails. The returned damage is based on the damage you received after armor or magic reduction."
     },
     "Blade of Alacrity": {
         "Cost": "1000",
-        "Bonus": {"Agility":"+10"},
-        "background-position": "0 -456px"
+        "Bonus": {"Agility":"+10"}
     },
     "Blades of Attack": {
         "Cost": "450",
-        "Bonus": {"Damage":"+9"},
-        "background-position": "0 -380px"
+        "Bonus": {"Damage":"+9"}
     },
     "Blink Dagger": {
         "Cost": "2150",
@@ -165,8 +152,7 @@
                 "Affects": "Self"
             }
         },
-        "Extra Info": "Can not be bought by Pudge and Vengeful Spirit. Selecting a point outside the maximum range will actually land you at 960 units instead of 1200.",
-        "background-position": "0 -494px"
+        "Extra Info": "Can not be bought by Pudge and Vengeful Spirit. Selecting a point outside the maximum range will actually land you at 960 units instead of 1200."
     },
     "Bloodstone": {
         "Cost": "5050",
@@ -185,13 +171,11 @@
                 "Affects": "Self"
             }
         },
-        "Extra Info": "Amount of charges lost is rounded up. Range of experience gained while dead is 1000.",
-        "background-position": "0 -532px"
+        "Extra Info": "Amount of charges lost is rounded up. Range of experience gained while dead is 1000."
     },
     "Boots of Speed": {
         "Cost": "450",
-        "Bonus": {"Movement speed":"+50"},
-        "background-position": "0 -570px"
+        "Bonus": {"Movement speed":"+50"}
     },
     "Boots of Travel": {
         "Cost": "2450(2000)",
@@ -207,8 +191,7 @@
                 "Affects": "Self"
             }
         },
-        "Extra Info": "Will automatically target your Fountain if double clicked. Shares cooldown with Town Portal Scroll.",
-        "background-position": "0 -4408px"
+        "Extra Info": "Will automatically target your Fountain if double clicked. Shares cooldown with Town Portal Scroll."
     },
     "Bottle": {
         "Cost": "600",
@@ -222,18 +205,15 @@
                 "Duration": 3,
                 "Cooldown": 0.5
             }
-        },
-        "background-position": "0 -646px"
+        }
     },
     "Bracer": {
         "Cost": "525(190)",
-        "Bonus": {"Strength":"+6","Agility":"+3","Intelligence":"+3","Damage":"+3"},
-        "background-position": "0 -684px"
+        "Bonus": {"Strength":"+6","Agility":"+3","Intelligence":"+3","Damage":"+3"}
     },
     "Broadsword": {
         "Cost": "1200",
-        "Bonus": {"Damage":"+18"},
-        "background-position": "0 -760px"
+        "Bonus": {"Damage":"+18"}
     },
     "Buckler": {
         "Cost": "803(200)",
@@ -246,23 +226,19 @@
                 "Mana": 10,
                 "Cooldown": 25
             }
-        },
-        "background-position": "0 -798px"
+        }
     },
     "Butterfly": {
         "Cost": "6000",
-        "Bonus": {"Agility":"+30","Damage":"+30","Evasion":"+35&#37;","Attack speed":"+30"},
-        "background-position": "0 -836px"
+        "Bonus": {"Agility":"+30","Damage":"+30","Evasion":"+35&#37;","Attack speed":"+30"}
     },
     "Chainmail": {
         "Cost": "550",
-        "Bonus": {"Armor":"+5"},
-        "background-position": "0 -874px"
+        "Bonus": {"Armor":"+5"}
     },
     "Circlet": {
         "Cost": "185",
-        "Bonus": {"Strength":"+2","Agility":"+2","Intelligence":"+2"},
-        "background-position": "0 -912px"
+        "Bonus": {"Strength":"+2","Agility":"+2","Intelligence":"+2"}
     },
     "Clarity": {
         "Cost": "50",
@@ -274,18 +250,15 @@
                 "Ability Type": "Target Unit",
                 "Affects": "Allies and self"
             }
-        },
-        "background-position": "0 -950px"
+        }
     },
     "Claymore": {
         "Cost": "1400",
-        "Bonus": {"Damage":"+21"},
-        "background-position": "0 -988px"
+        "Bonus": {"Damage":"+21"}
     },
     "Cloack": {
         "Cost": "550",
-        "Bonus": {"Magic resistance":"+15&#37;"},
-        "background-position": "0 -1026px"
+        "Bonus": {"Magic resistance":"+15&#37;"}
     },
     "Crystalys": {
         "Cost": "2150",
@@ -298,8 +271,7 @@
                 "Critical Chance": "20&#37;",
                 "Critical Damage": "175&#37;"
             }
-        },
-        "background-position": "0 -2128px"
+        }
     },
     "Daedalus": {
         "Cost": "5550(1000)",
@@ -312,8 +284,7 @@
                 "Critical Chance": "25&#37;",
                 "Critical Damage": "240&#37;"
             }
-        },
-        "background-position": "0 -1710px"
+        }
     },
     "Dagon": {
         "Cost": "2730(1250)",
@@ -329,13 +300,11 @@
                 "Burst damage": "400/500/600/700/800",
                 "Range": "600/650/700/750/800"
             }
-        },
-        "background-position": "0 -1140px"
+        }
     },
     "Demon Edge": {
         "Cost": "2400",
-        "Bonus": {"Damage":"+46"},
-        "background-position": "0 -1178px"
+        "Bonus": {"Damage":"+46"}
     },
     "Desolator": {
         "Cost": "4100(900)",
@@ -348,8 +317,7 @@
                 "Armor Reduction": 7,
                 "Duration": 15
             }
-        },
-        "background-position": "0 -1216px"
+        }
     },
     "Diffusal Blade": {
         "Cost": "3300(850)",
@@ -369,13 +337,11 @@
                 "Affects": "Enemies",
                 "Damage": "Physical"
             }
-        },
-        "background-position": "0 -1254px"
+        }
     },
     "Divine Rapier": {
         "Cost": "6200",
-        "Bonus": {"Damage":"+300"},
-        "background-position": "0 -3268px"
+        "Bonus": {"Damage":"+300"}
     },
     "Drum of Endurance": {
         "Cost": "1775(800)",
@@ -397,8 +363,7 @@
                 "Bonus Attack Speed": 5,
                 "Bonus Movement Speed": "5&#37;"
             }
-        },
-        "background-position": "0 -76px"
+        }
     },
     "Dust of Appearance": {
         "Cost": "180",
@@ -412,18 +377,15 @@
                 "Mana": 5,
                 "Cooldown": 60
             }
-        },
-        "background-position": "0 -1292px"
+        }
     },
     "Eaglesong": {
         "Cost": "3300",
-        "Bonus": {"Agility":"+25"},
-        "background-position": "0 -1330px"
+        "Bonus": {"Agility":"+25"}
     },
     "Energy Booster": {
         "Cost": "1000",
-        "Bonus": {"Mana":"+250"},
-        "background-position": "0 -1368px"
+        "Bonus": {"Mana":"+250"}
     },
     "Ethereal Blade": {
         "Cost": "4900",
@@ -441,8 +403,7 @@
                 "Mana": 150,
                 "Cooldown": 30
             }
-        },
-        "background-position": "0 -1406px"
+        }
     },
     "Eul's Scepter of Divinity": {
         "Cost": "2700(500)",
@@ -456,8 +417,7 @@
                 "Mana": 75,
                 "Cooldown": 30
             }
-        },
-        "background-position": "0 -1102px"
+        }
     },
     "Eye of Skadi": {
         "Cost": "5675",
@@ -472,8 +432,7 @@
                 "Duration (melee wielder)": 5,
                 "Duration (ranged wielder)": 3 
             }
-        },
-        "background-position": "0 -3914px"
+        }
     },
     "Flying Courier": {
         "Cost": "220(150)",
@@ -481,8 +440,7 @@
             "Summon Flying Courier": {
                 "Description": "Summons a Flying Courier to carry items for you. The Flying Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The Flying Courier is invulnerable when near the friendly Fountain and will instantly die if it is too close to the enemy fountain area. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Flying Courier."
             }
-        },
-        "background-position": "0 -1482px"
+        }
     },
     "Force Staff": {
         "Cost": "2250(900)",
@@ -496,13 +454,11 @@
                 "Cooldown": 20,
                 "Mana": 25
             }
-        },
-        "background-position": "0 -1520px"
+        }
     },
     "Gauntlets of Strength": {
         "Cost": "150",
-        "Bonus": {"Strength":"+3"},
-        "background-position": "0 -1558px"
+        "Bonus": {"Strength":"+3"}
     },
     "Gem of True Sight": {
         "Cost": "850",
@@ -511,8 +467,7 @@
                 "Description": "Gives the ability to see invisible units and wards. Drops on death.",
                 "Radius": 1100
             }
-        },
-        "background-position": "0 -1596px"
+        }
     },
     "Ghost Scepter": {
         "Cost": "1600",
@@ -524,13 +479,11 @@
                 "Affects": "Self",
                 "Cooldown": 30
             }
-        },
-        "background-position": "0 -1634px"
+        }
     },
     "Gloves of Haste": {
         "Cost": "500",
-        "Bonus": {"Attack speed":"+15"},
-        "background-position": "0 -1672px"
+        "Bonus": {"Attack speed":"+15"}
     },
     "Hand of Midas": {
         "Cost": "1900(1400)",
@@ -542,8 +495,7 @@
                 "Affects": "Units",
                 "Cooldown": 100
             }
-        },
-        "background-position": "0 -1748px"
+        }
     },
     "Headdress": {
         "Cost": "603(200)",
@@ -555,8 +507,7 @@
                 "Affects": "Allies",
                 "Bonus Health Regeneration": 3
             }
-        },
-        "background-position": "0 -1786px"
+        }
     },
     "Healing Salves": {
         "Cost": "100",
@@ -568,8 +519,7 @@
                 "Ability Type": "Target Unit",
                 "Affects": "Allies"
             }
-        },
-        "background-position": "0 -1444px"
+        }
     },
     "Heart of Tarrasque": {
         "Cost": "5500(1200)",
@@ -581,8 +531,7 @@
                 "Affects": "Self",
                 "Bonus Health Regeneration": "2&#37;"
             }
-        },
-        "background-position": "0 -1824px"
+        }
     },
     "Heaven's Halberd": {
         "Cost": "3050",
@@ -604,13 +553,11 @@
                 "Movement Speed Slow": "20&#37;",
                 "Attack Speed Slow": "20&#37;"
             }
-        },
-        "background-position": "0 -1862px"
+        }
     },
     "Helm of Iron Will": {
         "Cost": "950",
-        "Bonus": {"HP regeneration":"+3","Armor":"+5"},
-        "background-position": "0 -1900px"
+        "Bonus": {"HP regeneration":"+3","Armor":"+5"}
     },
     "Helm of the Dominator": {
         "Cost": "1850",
@@ -629,18 +576,15 @@
                 "Ability Type": "Passive",
                 "Lifesteal": "15&#37;"
             }
-        },
-        "background-position": "0 -1938px"
+        }
     },
     "Hood of Defiance": {
         "Cost": "2125",
-        "Bonus": {"HP regeneration":"+8","Magic resistance":"+30&#37;"},
-        "background-position": "0 -1976px"
+        "Bonus": {"HP regeneration":"+8","Magic resistance":"+30&#37;"}
     },
     "Hyperstone": {
         "Cost": "2100",
-        "Bonus": {"Attack speed":"+55"},
-        "background-position": "0 -2014px"
+        "Bonus": {"Attack speed":"+55"}
     },
     "Observer Ward": {
         "Cost": "150",
@@ -649,8 +593,7 @@
                 "Description": "Places an Observer Ward to give sight of the surrounding area. Lasts 6 minutes.",
                 "Ability Type": "Target Point"
             }
-        },
-        "background-position": "0 -4750px"
+        }
     },
     "Sentry Ward": {
         "Cost": "200",
@@ -659,8 +602,7 @@
                 "Description": "Places a Sentry Ward to give True Sight of the surrounding area. Lasts 3 minutes.",
                 "Ability Type": "Target Point"
             }
-        },
-        "background-position": "0 -4788px"
+        }
     },
     "Smoke of Deceit": {
         "Cost": "100",
@@ -674,8 +616,7 @@
                 "Ability Type": "No Target",
                 "Affects": "Allied Heroes"
             }
-        },
-        "background-position": "0 -3990px"
+        }
     },
     "Tango": {
         "Cost": "90",
@@ -687,8 +628,7 @@
                 "Ability Type": "Trees",
                 "Affects": "Self"
             }
-        },
-        "background-position": "0 -4294px"
+        }
     },
     "Town Portal Scroll": {
         "Cost": "135",
@@ -702,8 +642,7 @@
                 "Mana": 75,
                 "Cooldown": 65
             }
-        },
-        "background-position": "0 -4332px"
+        }
     },
 "Iron Branch": {},
 "Slippers of Agility": {},
