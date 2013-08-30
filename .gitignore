@@ -40,3 +40,7 @@ Thumbs.db
 # Netbeans #
 #############
 nbproject/*
+
+# Sublime Text #
+################
+*.sublime-*
