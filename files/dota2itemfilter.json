@@ -39,11 +39,13 @@
             "Summon Animal Courier": {
                 "Description": "Summons an Animal Courier to carry items for you. The Animal Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The courier is invulnerable when near the friendly Fountain. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Courier."
             }
-        }
+        },
+        "Movespeed": "350",
+        "HP": "75"
     },
     "Arcane Boots": {
         "Cost": "1450(1000)",
-        "Bonus": {"Mana":"+250","Movement speed":"+60"},
+        "Bonus": {"Mana":"+250","Movement speed":"+55"},
         "Abilities": {
             "Replenish Mana": {
                 "Description": "Restores mana in an area around the hero.",
@@ -62,7 +64,7 @@
         "Bonus": {"HP regeneration":"+7","Damage":"+9","Armor":"+5","Attack speed":"+15"},
         "Abilities": {
             "Unholy Strength": {
-                "Description": "Gives +31 damage, +10 attack speed, and +25 strength while active, but drains 40 HP per second. You cannot die from the health loss when the bonus strength is gone, or the health drain per second.",
+                "Description": "Gives +31 damage, +10 attack speed, and +25 strength while active, but drains 40 HP per second. You cannot die from the health loss when the bonus strength is gone, or the health drain per second. The STR gain happens over 0.7 seconds.",
                 "Cooldown": 2,
                 "Ability Type": "Toggle",
                 "Affects": "Self"
@@ -105,7 +107,7 @@
         "Bonus": {"Strength":"+6"}
     },
     "Black King Bar": {
-        "Cost": "3900(1300)",
+        "Cost": "3975(1375)",
         "Bonus": {"Strength":"+10","Damage":"+24"},
         "Abilities": {
             "Avatar": {
@@ -156,7 +158,7 @@
     },
     "Bloodstone": {
         "Cost": "5050",
-        "Bonus": {"HP":"+500","Mana":"+400","HP regeneration":"+9","Mana regeneration":"+200&#37;"},
+        "Bonus": {"HP":"+500","Mana":"+400","HP regeneration":"+9","Mana regeneration":"+200&#37;","Damage":"+10"},
         "Abilities": {
             "Pocket Suicide": {
                 "Description": "Instantly commits suicide.",
@@ -194,7 +196,7 @@
         "Extra Info": "Will automatically target your Fountain if double clicked. Shares cooldown with Town Portal Scroll."
     },
     "Bottle": {
-        "Cost": "600",
+        "Cost": "650",
         "Abilities": {
             "Regenerate": {
                 "Description": "Restores HP and Mana over time. Effect is lost if unit is attacked. Empty Bottle refills near town fountain. You can also store runes in the bottle, to save for later use. After 2 minutes, stored Runes will be activated.",
@@ -369,9 +371,10 @@
         "Cost": "180",
         "Abilities": {
             "Reveal": {
-                "Description": "Reveals invisible Heroes in a nearby area.",
+                "Description": "Reveals invisible Heroes in a nearby area and slows them.",
                 "Duration": 12,
                 "Radius": 1050,
+                "Slow": "15&#37;",
                 "Ability Type": "No Target",
                 "Affects": "Enemies",
                 "Mana": 5,
@@ -407,7 +410,7 @@
     },
     "Eul's Scepter of Divinity": {
         "Cost": "2700(500)",
-        "Bonus": {"Intelligence":"+10","Mana regeneration":"+150&#37;","Movement speed":"+35"},
+        "Bonus": {"Intelligence":"+10","Mana regeneration":"+150&#37;","Movement speed":"+40"},
         "Abilities": {
             "Cyclone": {
                 "Description": "Target unit is swept up in a cyclone for 2.5 seconds, and is invulnerable.",
@@ -415,7 +418,7 @@
                 "Affects": "Units",
                 "Range": 700,
                 "Mana": 75,
-                "Cooldown": 30
+                "Cooldown": 25
             }
         }
     },
@@ -427,8 +430,8 @@
                 "Description": "Attacks slow the movement and attack speed of the target. Eye of Skadi is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers. Eye of Skadi can be combined with a lifesteal Unique Attack Modifier.",
                 "Ability Type": "Passive",
                 "Affects": "Enemies",
-                "Movement Speed Slow": "30&#37;",
-                "Attack Speed Slow": "20&#37;",
+                "Movement Speed Slow": "35&#37;",
+                "Attack Speed Slow": "35&#37;",
                 "Duration (melee wielder)": 5,
                 "Duration (ranged wielder)": 3 
             }
@@ -461,7 +464,7 @@
         "Bonus": {"Strength":"+3"}
     },
     "Gem of True Sight": {
-        "Cost": "850",
+        "Cost": "900",
         "Abilities": {
             "True Sight": {
                 "Description": "Gives the ability to see invisible units and wards. Drops on death.",
@@ -493,6 +496,7 @@
                 "Description": "Kills a non-hero target for 190 gold and 2.5× experience. Cannot be used on Ancients.",
                 "Ability Type": "Target Unit",
                 "Affects": "Units",
+                "Extra": "Does not work on Necronomicon units",
                 "Cooldown": 100
             }
         }
@@ -509,8 +513,8 @@
             }
         }
     },
-    "Healing Salves": {
-        "Cost": "100",
+    "Healing Salve": {
+        "Cost": "115",
         "Abilities": {
             "Regenerate Health": {
                 "Description": "Restores HP over time. If the user is attacked, the effect is lost.",
@@ -567,6 +571,7 @@
                 "Description": "Take control of a non-hero, non-ancient target unit.",
                 "Ability Type": "Target Unit",
                 "Affects": "Units",
+                "Extra": "Cannot target Necronomicon units.",
                 "Range": 700,
                 "Cooldown": 60,
                 "Mana": 75
@@ -583,15 +588,532 @@
         "Bonus": {"HP regeneration":"+8","Magic resistance":"+30&#37;"}
     },
     "Hyperstone": {
-        "Cost": "2100",
+        "Cost": "2000",
         "Bonus": {"Attack speed":"+55"}
+    },
+    "Iron Branch": {
+        "Cost": "53",
+        "Bonus": {"Strength":"+1","Agility":"+1","Intelligence":"+1"}
+    },
+    "Javelin": {
+        "Cost": "1500",
+        "Bonus": {"Damage":"+21"},
+        "Abilities": {
+            "Pierce": {
+                "Description": "Grants a chance to deal bonus damage.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Damage": "Physical",
+                "Damage Chance": "20&#37;",
+                "Bonus Damage": 40
+            }
+        }
+    },
+    "Linken's Sphere": {
+        "Cost": "5175(1325)",
+        "Bonus": {"Damage":"+10","Mana regeneration":"+150&#37;","HP regeneration":"+6","Strength":"+15","Agility":"+15","Intelligence":"+15"},
+        "Abilities": {
+            "Spellblock": {
+                "Description": "Blocks most targeted spells once every 17 seconds.",
+                "Ability Type": "Passive",
+                "Affects": "Self",
+                "Cooldown": 17
+            },
+            "Transfer Spellblock": {
+                "Description": "Transfers the Spellblock passive to an allied hero, which lasts 17 seconds, does not block spells for you and goes into cooldown as soon as the buff blocks a spell, if the 17 seconds pass and the buff has not been used up, Linken's Sphere does not trigger another cooldown.",
+                "Ability Type": "Active",
+                "Affects": "Allied Heroes",
+                "Duration": 17,
+                "Range": 700,
+                "Cooldown": 17
+            }
+        }
+    },
+    "Maelstrom": {
+        "Cost": "5175(1325)",
+        "Bonus": {"Damage":"+24","Attack speed":"+25"},
+        "Abilities": {
+            "Chain Lightning": {
+                "Description": "Grants a chance on attack to release a Chain Lightning that hits 4 targets, dealing damage. Maelstrom is a Unique Attack Modifier that stacks with other Unique Attack Modifiers, but overrides them when Chain Lightning occurs.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Damage": "Magical",
+                "Chance": "25&#37;",
+                "Damage": 120,
+                "Bounce Range": 900
+            }
+        }
+    },
+    "Magic Stick": {
+        "Cost": "200",
+        "Abilities": {
+            "Energy Charge": {
+                "Description": "Gains charges (max 10) based on enemies using abilities in a nearby area(1200 radius). When activated, it restores health and mana based on the number of charges stored.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Health and Mana Restored per Charge": 15,
+                "Cooldown": 13
+            }
+        }
+    },
+    "Magic Wand": {
+        "Cost": "509(150)",
+        "Bonus": {"Strength":"+3","Agility":"+3","Intelligence":"+3"},
+        "Abilities": {
+            "Energy Charge": {
+                "Description": "Gains charges (max 10) based on enemies using abilities in a nearby area(1200 radius). When activated, it restores health and mana based on the number of charges stored.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Health and Mana Restored per Charge": 15,
+                "Cooldown": 13
+            }
+        }
+    },
+    "Manta Style": {
+        "Cost": "5050(900)",
+        "Bonus": {"Strength":"+10","Agility":"+26","Intelligence":"+10","Attack speed":"+15","Movement speed":"+10&#37;"},
+        "Abilities": {
+            "Mirror Image (melee)": {
+                "Description": "Creates 2 illusions of your hero that last 20 seconds. Melee illusions deal 33% damage and take 350% damage.",
+                "Ability Type": "No target",
+                "Affects": "Self",
+                "Cooldown": 35,
+                "Mana": 165
+            },
+            "Mirror Image (ranged)": {
+                "Description": "Creates 2 illusions of your hero that last 20 seconds. Ranged illusions deal 28% damage and take 400% damage.",
+                "Ability Type": "No target",
+                "Affects": "Self",
+                "Cooldown": 50,
+                "Mana": 165
+            }
+        }
+    },
+    "Mantle of Intelligence": {
+        "Cost": "150",
+        "Bonus": {"Intelligence":"+3"}
+    },
+    "Mask of Madness": {
+        "Cost": "1900(1000)",
+        "Abilities": {
+            "Berserk": {
+                "Description": "Gives +100 attack speed and +30% movement speed but causes you to take extra 30% damage.",
+                "Ability Type": "No target",
+                "Affects": "Self",
+                "Duration": 12,
+                "Cooldown": 25,
+                "Mana": 25
+            },
+            "Lifesteal": {
+                "Description": "Grants lifesteal on attacks. Mask of Madness is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Lifesteal": "17&#37;"
+            }
+        }
+    },
+    "Medallion of Courage": {
+        "Cost": "1075(200)",
+        "Bonus": {"Armor":"+6","Mana regeneration":"+50&#37;"},
+        "Abilities": {
+            "Valor": {
+                "Description": "Reduces the armor of you and your target. Lasts 7 seconds.",
+                "Ability Type": "Target unit",
+                "Affects": "Enemies",
+                "Armor Reducation": 6,
+                "Range": 1000,
+                "Cooldown": 7
+            }
+        }
+    },
+    "Mekansm": {
+        "Cost": "2306(900)",
+        "Bonus": {"Strength":"+5","Agility":"+5","Intelligence":"+5","Armor":"+5"},
+        "Abilities": {
+            "Mekansm Aura": {
+                "Description": "Bonus HP Regen in an area. Multiple instances of Mekansm Aura do not stack.",
+                "Ability Type": "Passive",
+                "Affects": "Allies",
+                "Bonus Health Regeneration": 4,
+                "Radius": 750
+            },
+            "Restore": {
+                "Description": "Heals 250 HP and gives +2 armor in an area.",
+                "Ability Type": "No Target",
+                "Affects": "Allies",
+                "Radius": 750,
+                "Duration": 25,
+                "Cooldown": 45,     
+                "Mana": 150 
+            }
+        }
+    },
+    "Mithril Hammer": {
+        "Cost": "1600",
+        "Bonus": {"Damage":"+24"}
+    },
+    "Mjollnir": {
+        "Cost": "5400(600)",
+        "Bonus": {"Damage":"+24","Attack speed":"+80"},
+        "Abilities": {
+            "Static Charge": {
+                "Description": "Places a charged shield on a target unit.",
+                "Ability Type": "Target Unit",
+                "Affects": "Allies",
+                "Cast range": 600,
+                "Damage Type": "Magical",
+                "Damage": 200,
+                "Duration": 20,
+                "Lightning Chance": "20&#37;",
+                "Cooldown": 35,
+                "Mana": 50 
+            },
+            "Chain Lightning": {
+                "Description": "Grants a chance on attack to release a Chain Lightning that hits 8 targets, dealing damage. Mjollnir is a Unique Attack Modifier that stacks with other Unique Attack Modifiers, but overrides them when Chain Lightning occurs.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Bounce range": 900,
+                "Damage Type": "Magical",
+                "Damage": 160,
+                "Lightning Chance": "25&#37;"
+            }
+        }
+    },
+    "Monkey King Bar": {
+        "Cost": "5400",
+        "Bonus": {"Damage":"+88","Attack speed":"+15"},
+        "Abilities": {
+            "Mini-Bash": {
+                "Description": "Gives a chance to minibash and deal bonus damage.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Damage Type": "Magical",
+                "Bonus Damage": 100,
+                "Chance to Mini-Bash": "35&#37;"
+            },
+            "True Strike": {
+                "Description": "Prevents your attacks from missing.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies"
+            }
+        }
+    },
+    "Morbid Mask": {
+        "Cost": "900",
+        "Abilities": {
+            "Lifesteal": {
+                "Description": "Grants lifesteal on attacks. Morbid of Madness is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Lifesteal": "15&#37;"
+            }
+        }
+    },
+    "Mystic Staff": {
+        "Cost": "2700",
+        "Bonus": {"Intelligence":"+25"}
+    },
+    "Necronomicon": {
+        "Cost": "2700(1250)",
+        "Bonus": {"Intelligence":"+15/21/24","Strength":"+8/12/16"},
+        "Extra":"Has 3 levels, each upgrade costs another 1250 gold",
+        "Abilities": {
+            "Demonic Summoning": {
+                "Description": "Summons a Necronomicon Warrior and a Necronomicon Archer to fight for you. Their strength and abilities increase as Necronomicon increases in level. Lasts 40 seconds.",
+                "Ability Type": "No target",
+                "Cooldown": 80,
+                "Mana": 50
+            }
+        }
+    },
+    "Null Talisman": {
+        "Cost": "470(135)",
+        "Bonus": {"Strength":"+3","Agility":"+3","Intelligence":"+6","Damage":"+3"}
+    },
+    "Oblivion Staff": {
+        "Cost": "1675",
+        "Bonus": {"Intelligence":"+6","Mana regeneration":"+75&#37;","Damage":"+15","Attack speed":"+10"}
     },
     "Observer Ward": {
         "Cost": "150",
         "Abilities": {
             "Place Ward": {
-                "Description": "Places an Observer Ward to give sight of the surrounding area. Lasts 6 minutes.",
+                "Description": "Places an Observer Ward to give sight of the surrounding area. Lasts 7 minutes.",
                 "Ability Type": "Target Point"
+            }
+        },
+        "Extra": "Destroying a ward grants a 50 gold bounty"
+    },
+    "Ogre Club": {
+        "Cost": "1000",
+        "Bonus": {"Strength":"+10"}
+    },
+    "Orb of Venom": {
+        "Cost": "275",
+        "Abilities": {
+            "Poison Attack": {
+                "Description": "Poisons the target, dealing damage over time and slowing, depending on whether your hero is melee or ranged. The damage cannot be fatal. Orb of Venom is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Damage Type": "Magical",
+                "Damage per Second": 3,
+                "Movement Speed Slow (Ranged Wielder)": "4&#37;",
+                "Movement Speed Slow (Melee Wielder)": "12&#37;",
+                "Duration": 4
+            }
+        }
+    },
+    "Orchid Malevolence": {
+        "Cost": "4125(775)",
+        "Bonus": {"Intelligence":"+25","Mana regeneration":"+150&#37;","Damage":"+30","Attack speed":"+30"},
+        "Abilities": {
+            "Soul Burn": {
+                "Description": "Silences target unit for 5 seconds and amplifies the damage it takes by 30&#37;.",
+                "Ability Type": "Target unit",
+                "Affects": "Enemies",
+                "Damage Type": "Magical",
+                "Range": 900,
+                "Cooldown": 18,
+                "Mana": 100
+            }
+        }
+    },
+    "Perseverance": {
+        "Cost": "1750",
+        "Bonus": {"HP regeneration":"+5", "Mana regeneration":"+125&#37;", "Damage":"+10"}
+    },
+    "Phase Boots": {
+        "Cost": "1350",
+        "Bonus": {"Damage":"+24", "Movement speed":"+50"},
+        "Abilities": {
+            "Phase": {
+                "Description": "Gives increased movement speed and lets you move through units. Phase is cancelled upon using another item or ability.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Bonus Movement Speed": "16&#37;",
+                "Duration": 4, 
+                "Cooldown": 8
+            }
+        }
+    },
+    "Pipe of Insight": {
+        "Cost": "3628(900)",
+        "Bonus": {"HP regeneration":"+11", "Magic resistance":"+30&#37;"},
+        "Abilities": {
+            "Barrier": {
+                "Description": "Gives nearby friendly units a shield that blocks 400 spell damage.",
+                "Ability Type": "No Target",
+                "Affects": "Allies",
+                "Radius": 900,
+                "Duration": 10,
+                "Cooldown": 60,
+                "Mana": 100
+            }
+        }
+    },
+    "Platemail": {
+        "Cost": "1400",
+        "Bonus": {"Armor":"+10"}
+    },
+    "Point Booster": {
+        "Cost": "1200",
+        "Bonus": {"HP":"+200","Mana":"+150"}
+    },
+    "Poor Man's Shield": {
+        "Cost": "550",
+        "Bonus": {"Agility":"+6"},
+        "Abilities": {
+            "Damage Block": {
+                "Description": "Blocks physical attack damage, depending on the type of hero you are. Poor Man's Shield will always block attacks from enemy Heroes, but has a chance to block damage from creeps.",
+                "Ability Type": "Passive",
+                "Chance to Block Non-Hero Damage": "60&#37;",
+                "Damage Blocked (melee wielder)": 20,
+                "Damage Blocked (ranged wielder)": 10
+            }
+        }
+    },
+    "Power Treads": {
+        "Cost": "1400",
+        "Bonus": {"Selected attribute":"+8","Attack speed":"+30","Movement speed":"+50"},
+        "Abilities": {
+            "Switch Attribute": {
+                "Description": "Changes selected attribute between Strength, Agility and Intelligence.",
+                "Ability Type": "No Target"
+            }
+        }
+    },
+    "Quarterstaff": {
+        "Cost": "900",
+        "Bonus": {"Damage":"+10","Attack speed":"+10"}
+    },
+    "Quelling Blade": {
+        "Cost": "225",
+        "Abilities": {
+            "Destroy Tree/Ward": {
+                "Description": "Destroy a target tree or ward.",
+                "Ability Type": "Target Unit or Ward",
+                "Range": 350,
+                "Damage to Wards": 100,
+                "Cooldown": 5
+            },
+            "Quell": {
+                "Description": "Gives bonus attack damage against non-hero units, depending on the type of hero you are.",
+                "Ability Type": "Passive",
+                "Affects": "Units",
+                "Bonus Damage (melee)": "+32&#37;",
+                "Bonus Damage (ranged)": "+12&#37;"
+            }
+        }
+    },
+    "Radiance": {
+        "Cost": "5150(1350)",
+        "Bonus": {"Damage":"+60"},
+        "Abilities": {
+            "Burn Damage": {
+                "Description": "Deals damage per second in a 700 radius.",
+                "Ability Type": "Toggle",
+                "Affects": "Enemies",
+                "Damage Type": "Magical",
+                "Damage per Second": 50
+            }
+        }
+    },
+    "Reaver": {
+        "Cost": "3200",
+        "Bonus": {"Strength":"+25"}
+    },
+    "Refresher Orb": {
+        "Cost": "5300(1875)",
+        "Bonus": {"Intelligence":"+6","HP regeneration":"+5","Mana regeneration":"+200&#37;","Damage":"+40","Attack speed":"+10"},
+        "Abilities": {
+            "Reset Cooldowns": {
+                "Description": "Resets the cooldowns of all your items and abilities.",
+                "Ability Type": "No Target",
+                "Cooldown": 160,
+                "Mana": 375
+            }
+        }
+
+    },
+    "Ring of Aquila": {
+        "Cost": "985",
+        "Bonus": {"Strength":"+3","Intelligence":"+3","Agility":"+6","Damage":"+9","Armor":"+1"},
+        "Abilities": {
+            "Aquila Aura": {
+                "Description": "Grants mana regeneration and armor in a 900 radius.",
+                "Ability Type": "Toggle",
+                "Affects": "Allies",
+                "Bonus Mana Regeneration": 0.65,
+                "Bonus Armor": 2
+            }
+        }
+    },
+    "Ring of Basilius": {
+        "Cost": "500",
+        "Bonus": {"Damage":"+6","Armor":"+1"},
+        "Abilities": {
+            "Basilius Aura": {
+                "Description": "Grants mana regeneration and armor in a 900 radius.",
+                "Ability Type": "Toggle",
+                "Affects": "Allies",
+                "Bonus Mana Regeneration": 0.65,
+                "Bonus Armor": 2
+            }
+        }
+    },
+    "Ring of Health": {
+        "Cost": "875",
+        "Bonus": {"HP regeneration":"+5"}
+    },
+    "Ring of Protection": {
+        "Cost": "175",
+        "Bonus": {"Armor":"+2"}
+    },
+    "Ring of Regen": {
+        "Cost": "350",
+        "Bonus": {"HP regeneration":"+2"}
+    },
+    "Robe of the Magi": {
+        "Cost": "450",
+        "Bonus": {"Intelligence":"+6"}
+    },
+    "Rod of Atos": {
+        "Cost": "3100",
+        "Bonus": {"Intelligence":"+25","HP":"+325"},
+        "Abilities": {
+            "Cripple": {
+                "Description": "Slows the target's movement speed.",
+                "Ability Type": "Target Unit",
+                "Affects": "Enemies",
+                "Movement Speed Slow": "60&#37;",
+                "Duration": 4,
+                "Range": 1200,
+                "Cooldown": 12,
+                "Mana": 50
+            }
+        }
+    },
+    "Sacred Relic": {
+        "Cost": "3800",
+        "Bonus": {"Damage":"+60"}
+    },
+    "Sage's Mask": {
+        "Cost": "325",
+        "Bonus": {"Mana regeneration":"+50&#37;"}
+    },
+    "Sange and Yasha": {
+        "Cost": "4100",
+        "Bonus": {"Movement speed":"+16&#37;","Attack speed":"+16","Damage":"+16","Agility":"+16","Strength":"+16"},
+        "Abilities": {
+            "Greater Maim": {
+                "Description": "Gives a chance on attack to slow for 4 seconds.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Maim Chance": "16&#37;",
+                "Movement Speed Slow": "30&#37;",
+                "Attack Speed Slow": "30&#37;"
+            }
+        }
+    },
+    "Sange": {
+        "Cost": "2050(600)",
+        "Bonus": {"Damage":"+10","Strength":"+16"},
+        "Abilities": {
+            "Lesser Maim": {
+                "Description": "Gives a chance on attack to slow for 4 seconds.",
+                "Ability Type": "Passive",
+                "Affects": "Enemies",
+                "Maim Chance": "15&#37;",
+                "Movement Speed Slow": "20&#37;",
+                "Attack Speed Slow": "20&#37;"
+            }
+        }
+    },
+    "Satanic": {
+        "Cost": "6150(1100)",
+        "Bonus": {"Strength":"+25","Damage":"+20","Armor":"+5"},
+        "Abilities": {
+            "Lifesteal": {
+                "Description": "Grants lifesteal on attacks. Satanic is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
+                "Ability Type": "Passive",
+                "Lifesteal": "25&#37;"
+            },
+            "Unholy Rage": {
+                "Description": "Increases Lifesteal by 175% for 3.5 seconds.",
+                "Ability Type": "No Target",
+                "Cooldown": 35
+            }
+        }
+    },
+    "Scythe of Vyse": {
+        "Cost": "5675",
+        "Bonus": {"Strength":"+10","Agility":"+10","Intelligence":"+35","Mana Regeneration":"+150&#37;"},
+        "Abilities": {
+            "Hex": {
+                "Description": "Turns a target unit into a harmless critter for 3.5 seconds. Destroys illusions.",
+                "Ability Type": "Target Unit",
+                "Affects": "Enemies",
+                "Range": 800,
+                "Cooldown": 35,
+                "Mana": 100
             }
         }
     },
@@ -599,30 +1121,135 @@
         "Cost": "200",
         "Abilities": {
             "Place Ward": {
-                "Description": "Places a Sentry Ward to give True Sight of the surrounding area. Lasts 3 minutes.",
+                "Description": "Places a Sentry Ward to give True Sight of the surrounding area. Lasts 4 minutes.",
                 "Ability Type": "Target Point"
             }
         }
     },
+    "Shadow Amulet": {
+        "Cost": "1600",
+        "Bonus": {"Attack speed":"+30"},
+        "Abilities": {
+            "Fade": {
+                "Description": "Fade to invisibility. If you move you will become visible.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Fade Time": 1.8,
+                "Cooldown": 0
+            }
+        }
+    },
+    "Shadow Blade": {
+        "Cost": "3000",
+        "Bonus": {"Attack speed":"+30","Damage":"+22"},
+        "Abilities": {
+            "Shadow Walk": {
+                "Description": "Makes you invisible until the duration ends, or until you attack or cast a spell. While Shadow Walk is active, you move 20% faster and can move through units. If attacking to break the invisibility, you gain 150 bonus damage on that attack. Lasts 12 seconds.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Damage Type": "Physical",
+                "Fade Time": 0.3,
+                "Cooldown": 28,
+                "Mana": 75
+            }
+        },
+        "Extra": "Activating this item does not break channeling abilities."
+    },
+    "Shiva's Guard": {
+        "Cost": "4700(600)",
+        "Bonus": {"Intelligence":"+30","Armor":"+15"},
+        "Abilities": {
+            "Arctic Blast": {
+                "Description": "Emits a freezing wave that does 200 damage to enemies and slows their movement by 40% for 4 seconds.",
+                "Ability Type": "No Target",
+                "Affects": "Enemies",
+                "Damage Type": "Magical",
+                "Radius": 719,
+                "Cooldown": 30,
+                "Mana": 100
+            },
+            "Freezing Aura": {
+                "Description": "Reduces attack speed on enemies. Multiple instances of Freezing Aura do not stack.",
+                "Ability Type": "Aura",
+                "Affects": "Enemies",
+                "Attack Speed Slow": 40,
+                "Radius": 900
+            }
+        }
+    },
+    "Skull Basher": {
+        "Cost": "2950(1000)",
+        "Bonus": {"Strength":"+6","Damage":"+40"},
+        "Abilities": {
+            "Bash": {
+                "Description": "Gives a chance to stun for 1.4 seconds.",
+                "Ability Type": "No Target",
+                "Affects": "Allied Heroes",
+                "Bash Chance for Melee Heroes": "25&#37;",
+                "Bash Chance for Ranged Heroes": "10&#37;",
+                "Cooldown": 2
+            }
+        },
+        "Extra": "Skull Basher cannot be purchased by Slardar, Faceless Void, Troll Warlord, or Spirit Breaker."
+    },
+    "Slippers of Agility": {
+        "Cost": "150",
+        "Bonus": {"Agility":"+3"}
+    },    
     "Smoke of Deceit": {
         "Cost": "100",
         "Abilities": {
             "Smoke of Deceit": {
                 "Description": "Upon activation, the user and all nearby allied player-controlled units gain invisiblity and bonus movement speed for a brief time. Minimap icons will also be hidden. Upon moving within 1025 range of an enemy hero or tower, the invisibility and movement speed bonus is lost.",
+                "Ability Type": "No Target",
+                "Affects": "Allied Heroes",
                 "Duration": 40,
                 "Bonus Movement Speed": "15&#37;",
                 "Radius": 1200,
-                "Cooldown": 90,
-                "Ability Type": "No Target",
-                "Affects": "Allied Heroes"
+                "Cooldown": 90
             }
         }
     },
+    "Soul Booster": {
+        "Cost": "3300",
+        "Bonus": {"HP":"+450","Mana":"+400","HP regeneration":"+4","Mana regeneration":"+100&#37;"}
+    },
+    "Soul Ring": {
+        "Cost": "800(125)",
+        "Abilities": {
+            "Sacrifice": {
+                "Description": "Consume 150 HP to temporarily gain 150 mana. Lasts 10 seconds.",
+                "Ability Type": "No Target",
+                "Affects": "Self",
+                "Cooldown": 30
+            }
+        }
+    },
+    "Staff of Wizardry": {
+        "Cost": "1000",
+        "Bonus": {"Intelligence":"+10"}
+    },
+    "Stout Shield": {
+        "Cost": "250",
+        "Abilities": {
+            "Damage Block": {
+                "Description": "Gives a chance to block damage. Melee Heroes will block 20 damage, whilst Ranged Heroes only block 10.",
+                "Ability Type": "Passive",
+                "Chance to Block Non-Hero Damage": "60&#37;",
+                "Damage Blocked (melee wielder)": 20,
+                "Damage Blocked (ranged wielder)": 10
+            }
+        }
+    },
+    "Talisman of Evasion": {
+        "Cost": "1800",
+        "Bonus": {"Evasion":"+25&#37;"}
+    },
     "Tango": {
-        "Cost": "90",
+        "Cost": "125",
         "Abilities": {
             "Eat Tree": {
-                "Description": "Consume a tree to restore HP over time. Comes with 3 charges.",
+                "Description": "Consume a tree to restore HP over time. Comes with 4 charges.",
                 "Duration": 16,
                 "Health restored": 115,
                 "Ability Type": "Trees",
@@ -644,71 +1271,98 @@
             }
         }
     },
-"Iron Branch": {},
-"Slippers of Agility": {},
-"Mantle of Intelligence": {},
-"Robe of the Magi": {},
-"Ultimate Orb": {},
-"Ogre Club": {},
-"Staff of Wizardry": {},
-"Ring of Protection": {},
-"Quelling Blade": {},
-"Stout Shield": {},
-"Quarterstaff": {},
-"Platemail": {},
-"Javelin": {},
-"Mithril Hammer": {},
-"Magic Stick": {},
-"Sage's Mask": {},
-"Ring of Regen": {},
-"Morbid Mask": {},
-"Shadow Amulet": {},
-"Talisman of Evasion": {},
-"Null Talisman": {},
-"Wraith Band": {},
-"Magic Wand": {},
-"Poor Man's Shield": {},
-"Soul Ring": {},
-"Phase Boots": {},
-"Power Treads": {},
-"Oblivion Staff": {},
-"Perseverance": {},
-"Ring of Basilius": {},
-"Urn of Shadows": {},
-"Tranquil Boots": {},
-"Ring of Aquila": {},
-"Medallion of Courage": {},
-"Vladimir's Offering": {},
-"Mekansm": {},
-"Pipe of Insight": {},
-"Veil of Discord": {},
-"Necronomicon": {},
-"Rod of Atos": {},
-"Orchid Malevolence": {},
-"Refresher Orb": {},
-"Scythe of Vyse": {},
-"Skull Basher": {},
-"Shadow Blade": {},
-"Radiance": {},
-"Monkey King Bar": {},
-"Vanguard": {},
-"Soul Booster": {},
-"Shiva's Guard": {},
-"Manta Style": {},
-"Linken's Sphere": {},
-"Mask of Madness": {},
-"Sange": {},
-"Yasha": {},
-"Maelstrom": {},
-"Sange and Yasha": {},
-"Mjollnir": {},
-"Satanic": {},
-"Orb of Venom": {},
-"Ring of Health": {},
-"Void Stone": {},
-"Vitality Booster": {},
-"Point Booster": {},
-"Mystic Staff": {},
-"Reaver": {},
-"Sacred Relic": {}
+    "Tranquil Boots": {
+        "Cost": "975",
+        "Bonus": {"HP regeneration":"+10","Armor":"+4","Movement speed":"+85"},
+        "Abilities": {
+            "Break": {
+                "Description": "Breaks whenever you attack or are attacked. When broken the bonus hit point regeneration is lost as 25 movement speed. Restores when you haven't attacked or been attacked in the last 13 seconds.",
+                "Ability Type": "Passive"
+            }
+        }
+    },
+    "Ultimate Orb": {
+        "Cost": "2100",
+        "Bonus": {"Intelligence":"+10","Strength":"+10","Agility":"+10"}
+    },
+    "Urn of Shadows": {
+        "Cost": "875(250)",
+        "Bonus": {"Mana regeneration":"+50&#37;","Strength":"+6"},
+        "Abilities": {
+            "Soul Release": {
+                "Description": "Heals HP over time for friendly units, but deals damage over time for enemy units. The healing effect is lost if the affected unit takes damage from an enemy hero or tower.",
+                "Ability Type": "Target Unit",
+                "Affects": "Heroes",
+                "Damage": "HP Removal",
+                "Allied Heal (Total)": 400,
+                "Enemy Damage (Total)": 150,
+                "Heal/Damage Duration": 8,
+                "Range": 950,
+                "Cooldown": 7
+            }
+        },
+        "Extra": "Can cast on magic immune allies, but not enemies."
+    },
+    "Vanguard": {
+        "Cost": "2225",
+        "Bonus": {"HP":"+250","HP regeneration":"+6"},
+        "Abilities": {
+            "Damage Block": {
+                "Description": "Heals HP over time for friendly units, but deals damage over time for enemy units. The healing effect is lost if the affected unit takes damage from an enemy hero or tower.",
+                "Ability Type": "Target Unit",
+                "Chance to Block": "80&#37;",
+                "Damage Blocked (melee wielder)": 40,
+                "Damage Blocked (ranged wielder)": 20
+            }
+        }
+    },
+    "Veil of Discord": {
+        "Cost": "2670(1250)",
+        "Bonus": {"HP regeneration":"+6","Armor":"+6","Intelligence":"+6","Damage":"+3","Agility":"+3","Strength":"+3"},
+        "Abilities": {
+            "Magic Weakness": {
+                "Description": "Emits a weakening blast that increases the magical damage enemies take. Lasts 25 seconds.",
+                "Ability Type": "Target Point",
+                "Affects": "Enemies",
+                "Radius": 600,
+                "Magical Damage Amplification": "25&#37;",
+                "Range": 1000,
+                "Duration": 25,
+                "Cooldown": 30,
+                "Mana": 75
+            }
+        }
+    },
+    "Vitality Booster": {
+        "Cost": "1100",
+        "Bonus": {"HP":"+250"}
+    },
+    "Vladimir's Offering": {
+        "Cost": "2050(300)",
+        "Bonus": {"HP regeneration":"+2"},
+        "Abilities": {
+            "Magic Weakness": {
+                "Description": "Grants a variety of bonuses to nearby allies. Lifesteal bonuses from Vladmir's Aura only affect melee units. Multiple instances of Vladmir's Aura do not stack. ",
+                "Ability Type": "Aura",
+                "Affects": "Allies",
+                "Radius": 900,
+                "Lifesteal": "16&#37;",
+                "Bonus Damage": "15&#37;",
+                "Bonus Armor": 5,
+                "Bonus Mana Regeneration": 0.8
+            }
+        }
+    },
+    "Void Stone": {
+        "Cost": "875",
+        "Bonus": {"Mana regeneration":"+100&#37;"}
+    },
+    "Wraith Band": {
+        "Cost": "485(150)",
+        "Bonus": {"Strength":"+3","Agility":"+6","Intelligence":"+3","Damage":"+3"}
+    },
+    "Yasha": {
+        "Cost": "2050(600)",
+        "Bonus": {"Agility":"+16","Attack speed":"+15","Movement speed":"+10&#37;"}
+    }
 }

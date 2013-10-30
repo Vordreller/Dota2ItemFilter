@@ -62,6 +62,9 @@ $(document).ready(function() {
 
     //Upon checking or unchecking a checkbox, hide or display all items not related to it.
     $('input:checkbox').on('change', function() {
+        //Empty the details pane if something was being shown, make sure you're not viewing an item that's not part of the selection.
+        $('#details').html('');
+
         //First thing to do on every change: go over all checkboxes.
 
         //Save the collection of checked checkboxes
@@ -79,6 +82,7 @@ $(document).ready(function() {
             });
 
             //Re-enable all checkboxes
+            //Is this even necessary?
             $('input:checkbox').each(function() {
                 $(this).attr('disabled', false);
             });
@@ -135,6 +139,7 @@ $(document).ready(function() {
         setDisabledColor();
     });
 
+    //Used 3 functions down. Can this be done better?
     var currentFigure = "";
 
     //Get the info on the item that was clicked on
@@ -160,6 +165,7 @@ $(document).ready(function() {
     var formatData = function(data) {
         var itemData = traverse(data);
         $("#details").html("<ul>"+itemData+"</ul>");
+        //If this function is executed, the currentFigure will have been set.
         $(currentFigure).clone().addClass("solo").prependTo("#details");
     }
 
@@ -172,7 +178,7 @@ $(document).ready(function() {
         //Get all info on the object
         for (var item in object) {
             if (typeof(object[item])=="object") {
-                //going on step down in the object tree!!
+                //Going one step down in the object tree!!
                 itemDetails += "<li>" + item + " : <ul>" + traverse(object[item]) + "</ul></li>";
                 
             } else {

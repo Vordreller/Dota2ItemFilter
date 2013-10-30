@@ -60,7 +60,7 @@
                         "Tango" => "tango consumables health_regen",
                         "Clarity" => "clarity consumables mana_regen",
                         "Healing Salve" => "healing_salve consumables health_regen",
-                        "Smoke Of Deceit" => "smoke_of_deceit consumables invisibility",
+                        "Smoke of Deceit" => "smoke_of_deceit consumables invisibility",
                         "Town Portal Scroll" => "town_portal_scroll consumables teleport",
                         "Dust of Appearance" => "dust_of_appearance consumables true_sight",
                         "Animal Courier" => "animal_courier consumables",
