@@ -489,7 +489,7 @@
         "Bonus": {"Attack speed":"+15"}
     },
     "Hand of Midas": {
-        "Cost": "1900(1400)",
+        "Cost": "2050(1550)",
         "Bonus": {"Attack speed":"+30"},
         "Abilities": {
             "Transmute": {
@@ -819,6 +819,7 @@
             "Demonic Summoning": {
                 "Description": "Summons a Necronomicon Warrior and a Necronomicon Archer to fight for you. Their strength and abilities increase as Necronomicon increases in level. Lasts 40 seconds.",
                 "Ability Type": "No target",
+                "Bounty": "100/125/150",
                 "Cooldown": 80,
                 "Mana": 50
             }
