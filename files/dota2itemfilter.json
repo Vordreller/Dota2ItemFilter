@@ -37,7 +37,7 @@
         "Cost": "150",
         "Abilities": {
             "Summon Animal Courier": {
-                "Description": "Summons an Animal Courier to carry items for you. The Animal Courier is not affected by most spells, and has magic immunity. It gives 175 gold to each enemy player if killed. The courier is invulnerable when near the friendly Fountain. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Courier."
+                "Description": "Summons an Animal Courier to carry items for you. The Animal Courier is not affected by most spells, and has magic immunity. It gives 150 gold to each enemy player if killed. The courier is invulnerable when near the friendly Fountain. It can use some items that cost no mana, being able to use Healing Salve and Clarity on heroes (but not on itself), Tangoes and the Smoke of Deceit which will provide the shroud effect to any allied heroes in close proximity to the Courier."
             }
         },
         "Movespeed": "350",
@@ -54,7 +54,7 @@
                 "Mana restored": 135,
                 "Radius": 600,
                 "Cooldown": 55,
-                "Mana": 25
+                "Mana": 35
             }
         },
         "Extra Info": "Does not work on Meepo clones."
@@ -95,7 +95,7 @@
         "Bonus": {"HP regeneration":"+6","Mana regeneration":"+150&#37;","Damage":"+65"},
         "Abilities": {
             "Cleave": {
-                "Description": "Deals a percent of attack damage in a 225 radius around the target. Does not work on ranged heroes. Cleave damage on non-primary targets is not reduced by armor values.",
+                "Description": "Deals a percent of attack damage in a 250 radius around the target. Does not work on ranged heroes. Cleave damage on non-primary targets is not reduced by armor values.",
                 "Cleave Damage": "35&#37;",
                 "Ability Type": "Passive",
                 "Affects": "Enemies"
@@ -149,12 +149,10 @@
             "Blink": {
                 "Description": "Teleport to a target point up to 1200 units away. If damage is taken from an enemy hero, Blink Dagger cannot be used for 3 seconds.",
                 "Cooldown": 12,
-                "Mana": 75,
                 "Ability Type": "Target point",
                 "Affects": "Self"
             }
-        },
-        "Extra Info": "Can not be bought by Pudge and Vengeful Spirit. Selecting a point outside the maximum range will actually land you at 960 units instead of 1200."
+        }
     },
     "Bloodstone": {
         "Cost": "5050",
@@ -201,7 +199,7 @@
             "Regenerate": {
                 "Description": "Restores HP and Mana over time. Effect is lost if unit is attacked. Empty Bottle refills near town fountain. You can also store runes in the bottle, to save for later use. After 2 minutes, stored Runes will be activated.",
                 "Ability Type": "No Target",
-                "Affects": "Self",
+                "Affects": "Allied Heros",
                 "Health Restored": 135,
                 "Mana Restored": 70,
                 "Duration": 3,
@@ -323,7 +321,7 @@
     },
     "Diffusal Blade": {
         "Cost": "3300(850)",
-        "Bonus": {"Agility":"+22/26","Intelligence":"+6/10"},
+        "Bonus": {"Agility":"+25/30","Intelligence":"+6/10"},
         "Abilities": {
             "Purge": {
                 "Description": "Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.",
@@ -346,7 +344,7 @@
         "Bonus": {"Damage":"+300"}
     },
     "Drum of Endurance": {
-        "Cost": "1775(800)",
+        "Cost": "1850(875)",
         "Bonus": {"Strength":"+9","Agility":"+9","Intelligence":"+9","Damage":"+3"},
         "Abilities": {
             "Endurance": {
@@ -354,6 +352,7 @@
                 "Ability Type": "No Target",
                 "Affects": "Allied Heroes",
                 "Radius": 900,
+				"Charges": 5,
                 "Duration": 6,
                 "Cooldown": 30
             },
@@ -418,7 +417,7 @@
                 "Affects": "Units",
                 "Range": 700,
                 "Mana": 75,
-                "Cooldown": 25
+                "Cooldown": 23
             }
         }
     },
@@ -454,6 +453,7 @@
                 "Ability Type": "Target Unit",
                 "Affects": "Units",
                 "Range": 800,
+				"Duration": "0.4 seconds",
                 "Cooldown": 20,
                 "Mana": 25
             }
@@ -496,7 +496,7 @@
                 "Description": "Kills a non-hero target for 190 gold and 2.5× experience. Cannot be used on Ancients.",
                 "Ability Type": "Target Unit",
                 "Affects": "Units",
-                "Extra": "Does not work on Necronomicon units",
+                "Extra Info": "Does not work on Necronomicon units",
                 "Cooldown": 100
             }
         }
@@ -571,7 +571,7 @@
                 "Description": "Take control of a non-hero, non-ancient target unit.",
                 "Ability Type": "Target Unit",
                 "Affects": "Units",
-                "Extra": "Cannot target Necronomicon units.",
+                "Extra Info": "Cannot target Necronomicon units.",
                 "Range": 700,
                 "Cooldown": 60,
                 "Mana": 75
@@ -592,7 +592,7 @@
         "Bonus": {"Attack speed":"+55"}
     },
     "Iron Branch": {
-        "Cost": "53",
+        "Cost": "50",
         "Bonus": {"Strength":"+1","Agility":"+1","Intelligence":"+1"}
     },
     "Javelin": {
@@ -707,7 +707,7 @@
             "Lifesteal": {
                 "Description": "Grants lifesteal on attacks. Mask of Madness is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
                 "Ability Type": "Passive",
-                "Lifesteal": "17&#37;"
+                "Lifesteal": "20&#37;"
             }
         }
     },
@@ -814,13 +814,13 @@
     "Necronomicon": {
         "Cost": "2700(1250)",
         "Bonus": {"Intelligence":"+15/21/24","Strength":"+8/12/16"},
-        "Extra":"Has 3 levels, each upgrade costs another 1250 gold",
+        "Extra Info":"Has 3 levels, each upgrade costs another 1250 gold",
         "Abilities": {
             "Demonic Summoning": {
                 "Description": "Summons a Necronomicon Warrior and a Necronomicon Archer to fight for you. Their strength and abilities increase as Necronomicon increases in level. Lasts 40 seconds.",
                 "Ability Type": "No target",
-                "Bounty": "100/125/150",
-                "Cooldown": 80,
+                "Bounty": "100/150/200",
+                "Cooldown": 95,
                 "Mana": 50
             }
         }
@@ -841,7 +841,7 @@
                 "Ability Type": "Target Point"
             }
         },
-        "Extra": "Destroying a ward grants a 50 gold bounty"
+        "Extra Info": "Destroying a ward grants a 50 gold bounty. You can now(patch 6.80) transfer a charge to an ally."
     },
     "Ogre Club": {
         "Cost": "1000",
@@ -966,7 +966,7 @@
     },
     "Radiance": {
         "Cost": "5150(1350)",
-        "Bonus": {"Damage":"+60"},
+        "Bonus": {"Damage":"+65"},
         "Abilities": {
             "Burn Damage": {
                 "Description": "Deals damage per second in a 700 radius.",
@@ -982,7 +982,7 @@
         "Bonus": {"Strength":"+25"}
     },
     "Refresher Orb": {
-        "Cost": "5300(1875)",
+        "Cost": "5225(1800)",
         "Bonus": {"Intelligence":"+6","HP regeneration":"+5","Mana regeneration":"+200&#37;","Damage":"+40","Attack speed":"+10"},
         "Abilities": {
             "Reset Cooldowns": {
@@ -996,7 +996,7 @@
     },
     "Ring of Aquila": {
         "Cost": "985",
-        "Bonus": {"Strength":"+3","Intelligence":"+3","Agility":"+6","Damage":"+9","Armor":"+1"},
+        "Bonus": {"Strength":"+3","Intelligence":"+3","Agility":"+9","Damage":"+9","Armor":"+1"},
         "Abilities": {
             "Aquila Aura": {
                 "Description": "Grants mana regeneration and armor in a 900 radius.",
@@ -1038,7 +1038,7 @@
     },
     "Rod of Atos": {
         "Cost": "3100",
-        "Bonus": {"Intelligence":"+25","HP":"+325"},
+        "Bonus": {"Intelligence":"+25","HP":"+350"},
         "Abilities": {
             "Cripple": {
                 "Description": "Slows the target's movement speed.",
@@ -1065,12 +1065,12 @@
         "Bonus": {"Movement speed":"+16&#37;","Attack speed":"+16","Damage":"+16","Agility":"+16","Strength":"+16"},
         "Abilities": {
             "Greater Maim": {
-                "Description": "Gives a chance on attack to slow for 4 seconds.",
+                "Description": "Gives a chance on attack to slow for 5 seconds.",
                 "Ability Type": "Passive",
                 "Affects": "Enemies",
                 "Maim Chance": "16&#37;",
-                "Movement Speed Slow": "30&#37;",
-                "Attack Speed Slow": "30&#37;"
+                "Movement Speed Slow": "32&#37;",
+                "Attack Speed Slow": "32&#37;"
             }
         }
     },
@@ -1125,7 +1125,8 @@
                 "Description": "Places a Sentry Ward to give True Sight of the surrounding area. Lasts 4 minutes.",
                 "Ability Type": "Target Point"
             }
-        }
+        },
+		"Extra Info": "Destroying a ward grants a 50 gold bounty. You can now(patch 6.80) transfer a charge to an ally."
     },
     "Shadow Amulet": {
         "Cost": "1600",
@@ -1134,9 +1135,10 @@
             "Fade": {
                 "Description": "Fade to invisibility. If you move you will become visible.",
                 "Ability Type": "No Target",
-                "Affects": "Self",
-                "Fade Time": 1.8,
-                "Cooldown": 0
+                "Affects": "Self/Allied Heros",
+				"Cast Range": 600,
+                "Fade Time": 1.5,
+                "Cooldown": "0/10 for self/allies"
             }
         }
     },
@@ -1154,7 +1156,7 @@
                 "Mana": 75
             }
         },
-        "Extra": "Activating this item does not break channeling abilities."
+        "Extra Info": "Activating this item does not break channeling abilities."
     },
     "Shiva's Guard": {
         "Cost": "4700(600)",
@@ -1165,7 +1167,8 @@
                 "Ability Type": "No Target",
                 "Affects": "Enemies",
                 "Damage Type": "Magical",
-                "Radius": 719,
+                "Radius": 900,
+				"Grow Speed": 350,
                 "Cooldown": 30,
                 "Mana": 100
             },
@@ -1191,7 +1194,7 @@
                 "Cooldown": 2
             }
         },
-        "Extra": "Skull Basher cannot be purchased by Slardar, Faceless Void, Troll Warlord, or Spirit Breaker."
+        "Extra Info": "Skull Basher cannot be purchased by Slardar, Faceless Void, Troll Warlord, or Spirit Breaker."
     },
     "Slippers of Agility": {
         "Cost": "150",
@@ -1204,7 +1207,7 @@
                 "Description": "Upon activation, the user and all nearby allied player-controlled units gain invisiblity and bonus movement speed for a brief time. Minimap icons will also be hidden. Upon moving within 1025 range of an enemy hero or tower, the invisibility and movement speed bonus is lost.",
                 "Ability Type": "No Target",
                 "Affects": "Allied Heroes",
-                "Duration": 40,
+                "Duration": 35,
                 "Bonus Movement Speed": "15&#37;",
                 "Radius": 1200,
                 "Cooldown": 90
@@ -1262,8 +1265,8 @@
         "Cost": "135",
         "Abilities": {
             "Teleport": {
-                "Description": "Teleports you to within 525 range of a target friendly building. While channeling, gives 200 range vision on the target and pings your allies' minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
-                "Casting time": "3 (5/6/7/8 for 1/2/3/4 recent allied teleports)",
+                "Description": "Teleports you to within 575 range of a target friendly building. While channeling, gives 200 range vision on the target and pings your allies' minimaps. Teleporting to a non-fountain building takes additional time if any allies have also teleported within a 1100 radius of your target within 25 seconds.",
+                "Casting time": "3/5/5.5/6/6.5 for 0/1/2/3/4 recent allied teleports",
                 "Radius": "Global",
                 "Ability Type": "Channeled",
                 "Affects": "Self",
@@ -1274,7 +1277,7 @@
     },
     "Tranquil Boots": {
         "Cost": "975",
-        "Bonus": {"HP regeneration":"+10","Armor":"+4","Movement speed":"+85"},
+        "Bonus": {"HP regeneration":"+12","Armor":"+4","Movement speed":"+90"},
         "Abilities": {
             "Break": {
                 "Description": "Breaks whenever you attack or are attacked. When broken the bonus hit point regeneration is lost as 25 movement speed. Restores when you haven't attacked or been attacked in the last 13 seconds.",
@@ -1302,7 +1305,7 @@
                 "Cooldown": 7
             }
         },
-        "Extra": "Can cast on magic immune allies, but not enemies."
+        "Extra Info": "Can cast on magic immune allies, but not enemies."
     },
     "Vanguard": {
         "Cost": "2225",
@@ -1319,7 +1322,7 @@
     },
     "Veil of Discord": {
         "Cost": "2670(1250)",
-        "Bonus": {"HP regeneration":"+6","Armor":"+6","Intelligence":"+6","Damage":"+3","Agility":"+3","Strength":"+3"},
+        "Bonus": {"HP regeneration":"+6","Armor":"+6","Intelligence":"+6","Damage":"+6","Agility":"+6","Strength":"+6"},
         "Abilities": {
             "Magic Weakness": {
                 "Description": "Emits a weakening blast that increases the magical damage enemies take. Lasts 25 seconds.",
