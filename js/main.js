@@ -143,10 +143,11 @@ $(document).ready(function() {
     var currentFigure = "";
 
     //Get the info on the item that was clicked on
-    $("figure").on('click', function(eventObject) {
-        currentFigure = this;
-        getItemInfo(this.id);
-    });
+	//Disabled for static view
+    //$("figure").on('click', function(eventObject) {
+    //    currentFigure = this;
+    //    getItemInfo(this.id);
+    //});
 
     var getItemInfo = function(itemName) {
         var jqxhr = $.ajax({
