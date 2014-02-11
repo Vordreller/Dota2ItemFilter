@@ -6,7 +6,6 @@
         <meta http-equiv="Content-Language" content="en-US" />
         <link rel="stylesheet" href="css/normalize-2.1.2.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
