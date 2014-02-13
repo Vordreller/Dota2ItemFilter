@@ -4,7 +4,7 @@
         <title>DOTA2 Items by type</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="Content-Language" content="en-US" />
-        <link rel="stylesheet" href="css/normalize-2.1.2.css">
+        <link rel="stylesheet" href="css/normalize-3.0.0.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/main.js"></script>
     </head>

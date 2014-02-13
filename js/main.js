@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 //Now check if further combinations are possible.
                 //Values for which this is not possible should have their checkboxes disabled.
                 var visibleItems = document.querySelectorAll('figure:not(.hidden)');
-                console.log(visibleItems);
 
                 //Go over all the unchecked checkboxes
                 forEach.call(unchecked, function(item, i) {
