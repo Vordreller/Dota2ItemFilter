@@ -458,3 +458,8 @@ figure:hover {
 .hidden {
     display: none;
 }
+
+/* Required for Chrome */
+li {
+	clear: left;
+}
